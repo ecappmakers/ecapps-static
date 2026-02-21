@@ -1,0 +1,782 @@
+{
+  "categories": [
+    {
+      "id": "code",
+      "displayName": "Code Tools",
+      "icon": "fas fa-code"
+    },
+    {
+      "id": "data",
+      "displayName": "Data Tools",
+      "icon": "fas fa-database"
+    },
+    {
+      "id": "network",
+      "displayName": "Network Tools",
+      "icon": "fas fa-network-wired"
+    },
+    {
+      "id": "domain-tools",
+      "displayName": "Domain Tools",
+      "icon": "fas fa-globe"
+    },
+    {
+      "id": "time-number",
+      "displayName": "Time & Number Tools",
+      "icon": "fas fa-clock"
+    },
+    {
+      "id": "generators",
+      "displayName": "Generators",
+      "icon": "fas fa-magic"
+    },
+    {
+      "id": "certificate-tools",
+      "displayName": "Certificate Tools",
+      "icon": "fas fa-certificate"
+    },
+    {
+      "id": "learning",
+      "displayName": "Learning Tools",
+      "icon": "fas fa-graduation-cap"
+    },
+    {
+      "id": "developer",
+      "displayName": "Developer Tools",
+      "icon": "fas fa-tools"
+    },
+    {
+      "id": "accessibility",
+      "displayName": "Accessibility Tools",
+      "icon": "fas fa-universal-access"
+    },
+    {
+      "id": "student",
+      "displayName": "Student Tools",
+      "icon": "fas fa-user-graduate"
+    }
+  ],
+  "tools": [
+    {
+      "title": "JSON Beautifier",
+      "icon": "fas fa-code",
+      "description": "Format and beautify your JSON code for better readability.",
+      "url": "/code/formatters/json",
+      "category": "code"
+    },
+    {
+      "title": "XML Beautifier",
+      "icon": "fas fa-code",
+      "description": "Format and beautify your XML code for better readability.",
+      "url": "/code/formatters/xml",
+      "category": "code"
+    },
+    {
+      "title": "YAML Beautifier",
+      "icon": "fas fa-code",
+      "description": "Format and beautify your YAML code for better readability.",
+      "url": "/code/formatters/yaml",
+      "category": "code"
+    },
+    {
+      "title": "TOML Beautifier",
+      "icon": "fas fa-code",
+      "description": "Format and beautify your TOML code for better readability.",
+      "url": "/code/formatters/toml",
+      "category": "code"
+    },
+    {
+      "title": "SQL Beautifier",
+      "icon": "fas fa-database",
+      "description": "Format and beautify your SQL queries for better readability.",
+      "url": "/code/formatters/sql",
+      "category": "code"
+    },
+    {
+      "title": "HTML Beautifier",
+      "icon": "fab fa-html5",
+      "description": "Format and beautify your HTML code for better readability.",
+      "url": "/code/formatters/html",
+      "category": "code"
+    },
+    {
+      "title": "CSS Beautifier",
+      "icon": "fab fa-css3-alt",
+      "description": "Format and beautify your CSS code for better readability.",
+      "url": "/code/formatters/css",
+      "category": "code"
+    },
+    {
+      "title": "JavaScript Beautifier",
+      "icon": "fab fa-js",
+      "description": "Format and beautify your JavaScript code for better readability.",
+      "url": "/code/formatters/javascript",
+      "category": "code"
+    },
+    {
+      "title": "INI Beautifier",
+      "icon": "fas fa-cog",
+      "description": "Format and beautify your INI configuration files.",
+      "url": "/code/formatters/ini",
+      "category": "code"
+    },
+    {
+      "title": "Properties Beautifier",
+      "icon": "fas fa-file-alt",
+      "description": "Format and beautify your Properties files.",
+      "url": "/code/formatters/properties",
+      "category": "code"
+    },
+    {
+      "title": "Dockerfile Beautifier",
+      "icon": "fab fa-docker",
+      "description": "Format and beautify your Dockerfiles.",
+      "url": "/code/formatters/dockerfile",
+      "category": "code"
+    },
+    {
+      "title": "Bash Script Beautifier",
+      "icon": "fas fa-terminal",
+      "description": "Format and beautify your Bash scripts.",
+      "url": "/code/formatters/bash",
+      "category": "code"
+    },
+    {
+      "title": "JSON Minifier",
+      "icon": "fas fa-compress-alt",
+      "description": "Minify your JSON code to reduce file size.",
+      "url": "/code/minifiers/json",
+      "category": "code"
+    },
+    {
+      "title": "XML Minifier",
+      "icon": "fas fa-compress-alt",
+      "description": "Minify your XML code to reduce file size.",
+      "url": "/code/minifiers/xml",
+      "category": "code"
+    },
+    {
+      "title": "CSS Minifier",
+      "icon": "fas fa-compress-alt",
+      "description": "Minify your CSS code to reduce file size.",
+      "url": "/code/minifiers/css",
+      "category": "code"
+    },
+    {
+      "title": "JavaScript Minifier",
+      "icon": "fas fa-compress-alt",
+      "description": "Minify your JavaScript code to reduce file size.",
+      "url": "/code/minifiers/javascript",
+      "category": "code"
+    },
+    {
+      "title": "JSON YAML Converter",
+      "icon": "fas fa-exchange-alt",
+      "description": "Convert between JSON and YAML formats.",
+      "url": "/code/converters/json-yaml",
+      "category": "code"
+    },
+    {
+      "title": "JSON TOML Converter",
+      "icon": "fas fa-exchange-alt",
+      "description": "Convert between JSON and TOML formats.",
+      "url": "/code/converters/json-toml",
+      "category": "code"
+    },
+    {
+      "title": "JSON CSV Converter",
+      "icon": "fas fa-exchange-alt",
+      "description": "Convert between JSON and CSV formats.",
+      "url": "/code/converters/json-csv",
+      "category": "code"
+    },
+    {
+      "title": "CSV TSV Converter",
+      "icon": "fas fa-exchange-alt",
+      "description": "Convert between CSV and TSV formats.",
+      "url": "/code/converters/csv-tsv",
+      "category": "code"
+    },
+    {
+      "title": "JSON Properties Converter",
+      "icon": "fas fa-exchange-alt",
+      "description": "Convert between JSON and Properties formats.",
+      "url": "/code/converters/json-properties",
+      "category": "code"
+    },
+    {
+      "title": "JSON INI Converter",
+      "icon": "fas fa-exchange-alt",
+      "description": "Convert between JSON and INI formats.",
+      "url": "/code/converters/json-ini",
+      "category": "code"
+    },
+    {
+      "title": "Number System Converter",
+      "icon": "fas fa-calculator",
+      "description": "Convert numbers between different bases (binary, decimal, hexadecimal, etc.).",
+      "url": "/code/converters/number-system",
+      "category": "code"
+    },
+    {
+      "title": "Date Time Converter",
+      "icon": "fas fa-calendar-alt",
+      "description": "Convert dates and times between different formats and time zones.",
+      "url": "/code/converters/date-time",
+      "category": "code"
+    },
+    {
+      "title": "Variable Case Converter",
+      "icon": "fas fa-text-height",
+      "description": "Convert text between different case styles (camelCase, snake_case, etc.).",
+      "url": "/code/converters/variable-case",
+      "category": "code"
+    },
+    {
+      "title": "Base64 Encoder Decoder",
+      "icon": "fas fa-lock",
+      "description": "Encode or decode data using the Base64 encoding scheme.",
+      "url": "/code/encoders-decoders/base64",
+      "category": "code"
+    },
+    {
+      "title": "URL Encoder Decoder",
+      "icon": "fas fa-link",
+      "description": "Encode or decode URLs to handle special characters.",
+      "url": "/code/encoders-decoders/url",
+      "category": "code"
+    },
+    {
+      "title": "HTML Entities Encoder Decoder",
+      "icon": "fas fa-code",
+      "description": "Encode or decode special characters in HTML.",
+      "url": "/code/encoders-decoders/html-entities",
+      "category": "code"
+    },
+    {
+      "title": "JWT Decoder Encoder",
+      "icon": "fas fa-key",
+      "description": "Decode or encode JSON Web Tokens (JWTs).",
+      "url": "/code/encoders-decoders/jwt",
+      "category": "code"
+    },
+    {
+      "title": "MD5 Generator",
+      "icon": "fas fa-fingerprint",
+      "description": "Generate MD5 hashes of text or files.",
+      "url": "/code/hash-generators/md5",
+      "category": "code"
+    },
+    {
+      "title": "SHA1 Generator",
+      "icon": "fas fa-fingerprint",
+      "description": "Generate SHA1 hashes of text or files.",
+      "url": "/code/hash-generators/sha1",
+      "category": "code"
+    },
+    {
+      "title": "SHA256 Generator",
+      "icon": "fas fa-fingerprint",
+      "description": "Generate SHA256 hashes of text or files.",
+      "url": "/code/hash-generators/sha256",
+      "category": "code"
+    },
+    {
+      "title": "SHA3 Generator",
+      "icon": "fas fa-fingerprint",
+      "description": "Generate SHA3 hashes of text or files.",
+      "url": "/code/hash-generators/sha3",
+      "category": "code"
+    },
+    {
+      "title": "SHA512 Generator",
+      "icon": "fas fa-fingerprint",
+      "description": "Generate SHA512 hashes of text or files.",
+      "url": "/code/hash-generators/sha512",
+      "category": "code"
+    },
+    {
+      "title": "RIPEMD160 Generator",
+      "icon": "fas fa-fingerprint",
+      "description": "Generate RIPEMD160 hashes of text or files.",
+      "url": "/code/hash-generators/ripemd160",
+      "category": "code"
+    },
+    {
+      "title": "Regex Tester",
+      "icon": "fas fa-search",
+      "description": "Test your regular expressions against sample text.",
+      "url": "/code/regex-tools/tester",
+      "category": "code"
+    },
+    {
+      "title": "Regex Code Converter",
+      "icon": "fas fa-exchange-alt",
+      "description": "Convert regular expressions between different programming languages.",
+      "url": "/code/regex-tools/code-converter",
+      "category": "code"
+    },
+    {
+      "title": "Code Diff Merge",
+      "icon": "fas fa-code-branch",
+      "description": "Compare and merge code changes.",
+      "url": "/code/code-analysis/diff-merge",
+      "category": "code"
+    },
+    {
+      "title": "Syntax Highlighting",
+      "icon": "fas fa-highlighter",
+      "description": "Highlight code syntax for various programming languages.",
+      "url": "/code/code-analysis/syntax-highlighting",
+      "category": "code"
+    },
+    {
+      "title": "Gitignore Generator Validator",
+      "icon": "fab fa-github",
+      "description": "Generate and validate .gitignore files.",
+      "url": "/code/code-analysis/gitignore",
+      "category": "code"
+    },
+    {
+      "title": "Diff Checker",
+      "icon": "fas fa-not-equal",
+      "description": "Compare two text files and highlight the differences.",
+      "url": "/code/code-analysis/diff-checker",
+      "category": "code"
+    },
+    {
+      "title": "Dockerfile Linter",
+      "icon": "fab fa-docker",
+      "description": "Check your Dockerfiles for best practices and potential issues.",
+      "url": "/code/linters/dockerfile",
+      "category": "code"
+    },
+    {
+      "title": "CSV Viewer Editor",
+      "icon": "fas fa-table",
+      "description": "View and edit CSV files online.",
+      "url": "/data/csv-viewer-editor",
+      "category": "data"
+    },
+    {
+      "title": "CSV Converters",
+      "icon": "fas fa-exchange-alt",
+      "description": "Convert CSV files to other formats (e.g., JSON, XML, Excel).",
+      "url": "/data/csv-converters",
+      "category": "data"
+    },
+    {
+      "title": "Data Size Converter",
+      "icon": "fas fa-balance-scale",
+      "description": "Convert between different data size units (bytes, kilobytes, megabytes, etc.).",
+      "url": "/data/data-size-converter",
+      "category": "data"
+    },
+    {
+      "title": "JSON to SQL Converter",
+      "icon": "fas fa-exchange-alt",
+      "description": "Convert JSON data to SQL INSERT statements.",
+      "url": "/data/json-to-sql",
+      "category": "data"
+    },
+    {
+      "title": "SQL Query Formatter",
+      "icon": "fas fa-database",
+      "description": "Format and beautify SQL queries for better readability.",
+      "url": "/data/sql-query-formatter",
+      "category": "data"
+    },
+    {
+      "title": "HTTP Status Code Lookup",
+      "icon": "fas fa-globe",
+      "description": "Look up the meaning of HTTP status codes.",
+      "url": "/network/http-status-code-lookup",
+      "category": "network"
+    },
+    {
+      "title": "cURL Command Generator",
+      "icon": "fas fa-terminal",
+      "description": "Generate cURL commands for various HTTP requests.",
+      "url": "/network/curl-command-generator",
+      "category": "network"
+    },
+    {
+      "title": "IP Address Lookup",
+      "icon": "fas fa-search-location",
+      "description": "Get information about an IP address (geolocation, ISP, etc.).",
+      "url": "/network/ip-address-lookup",
+      "category": "network"
+    },
+    {
+      "title": "Subnet Calculator",
+      "icon": "fas fa-calculator",
+      "description": "Calculate subnets and IP address ranges.",
+      "url": "/network/subnet-calculator",
+      "category": "network"
+    },
+    {
+      "title": "Websocket Tester",
+      "icon": "fas fa-plug",
+      "description": "Test websocket connections.",
+      "url": "/network/websocket-tester",
+      "category": "network"
+    },
+    {
+      "title": "Port Scanner",
+      "icon": "fas fa-network-wired",
+      "description": "Scan a host for open ports.",
+      "url": "/network/port-scanner",
+      "category": "network"
+    },
+    {
+      "title": "SSL Certificate Checker",
+      "icon": "fas fa-shield-alt",
+      "description": "Check the validity and details of SSL certificates.",
+      "url": "/network/ssl-certificate-checker",
+      "category": "network"
+    },
+    {
+      "title": "Email Header Analyzer",
+      "icon": "fas fa-envelope",
+      "description": "Analyze email headers to trace the origin and path of an email.",
+      "url": "/network/email-header-analyzer",
+      "category": "network"
+    },
+    {
+      "title": "Reverse DNS Lookup",
+      "icon": "fas fa-search",
+      "description": "Find the domain name associated with an IP address.",
+      "url": "/network/reverse-dns-lookup",
+      "category": "network"
+    },
+    {
+      "title": "WHOIS Lookup",
+      "icon": "fas fa-search",
+      "description": "Look up WHOIS information for a domain name.",
+      "url": "/domain-tools/whois-lookup",
+      "category": "domain-tools"
+    },
+    {
+      "title": "DNS Lookup",
+      "icon": "fas fa-search-location",
+      "description": "Perform DNS lookups for various record types (A, AAAA, MX, NS, etc.).",
+      "url": "/domain-tools/dns-lookup",
+      "category": "domain-tools"
+    },
+    {
+      "title": "Domain Availability Checker",
+      "icon": "fas fa-check-circle",
+      "description": "Check if a domain name is available for registration.",
+      "url": "/domain-tools/domain-availability-checker",
+      "category": "domain-tools"
+    },
+    {
+      "title": "Reverse IP Lookup",
+      "icon": "fas fa-search",
+      "description": "Find domain names hosted on a specific IP address.",
+      "url": "/domain-tools/reverse-ip-lookup",
+      "category": "domain-tools"
+    },
+    {
+      "title": "Ping Tool",
+      "icon": "fas fa-satellite-dish",
+      "description": "Ping a host to check its reachability and latency.",
+      "url": "/domain-tools/ping-tool",
+      "category": "domain-tools"
+    },
+    {
+      "title": "Traceroute Tool",
+      "icon": "fas fa-route",
+      "description": "Trace the route packets take to reach a destination host.",
+      "url": "/domain-tools/traceroute-tool",
+      "category": "domain-tools"
+    },
+    {
+      "title": "Time Zone Converter",
+      "icon": "fas fa-clock",
+      "description": "Convert times between different time zones.",
+      "url": "/time-number/time-zone-converter",
+      "category": "time-number"
+    },
+    {
+      "title": "Duration Calculator",
+      "icon": "fas fa-stopwatch",
+      "description": "Calculate the duration between two dates or times.",
+      "url": "/time-number/duration-calculator",
+      "category": "time-number"
+    },
+    {
+      "title": "Cron Generator Parser",
+      "icon": "fas fa-calendar-alt",
+      "description": "Generate and parse cron expressions for scheduling tasks.",
+      "url": "/time-number/cron-generator-parser",
+      "category": "time-number"
+    },
+    {
+      "title": "Number Base Converter",
+      "icon": "fas fa-calculator",
+      "description": "Convert numbers between different bases (binary, decimal, hexadecimal, etc.).",
+      "url": "/time-number/number-base-converter",
+      "category": "time-number"
+    },
+    {
+      "title": "Bitwise Calculator",
+      "icon": "fas fa-calculator",
+      "description": "Perform bitwise operations on numbers.",
+      "url": "/time-number/bitwise-calculator",
+      "category": "time-number"
+    },
+    {
+      "title": "Timestamp Converter",
+      "icon": "fas fa-clock",
+      "description": "Convert timestamps to human-readable dates and times.",
+      "url": "/time-number/timestamp-converter",
+      "category": "time-number"
+    },
+    {
+      "title": "Fibonacci Sequence Generator",
+      "icon": "fas fa-calculator",
+      "description": "Generate Fibonacci sequences.",
+      "url": "/time-number/fibonacci-generator",
+      "category": "time-number"
+    },
+    {
+      "title": "UUID Generator",
+      "icon": "fas fa-fingerprint",
+      "description": "Generate universally unique identifiers (UUIDs).",
+      "url": "/generators/uuid-generator",
+      "category": "generators"
+    },
+    {
+      "title": "Password Generator",
+      "icon": "fas fa-key",
+      "description": "Generate strong and secure passwords.",
+      "url": "/generators/password-generator",
+      "category": "generators"
+    },
+    {
+      "title": "Htaccess Generator Validator",
+      "icon": "fas fa-file-code",
+      "description": "Generate and validate .htaccess files for web server configuration.",
+      "url": "/generators/htaccess-generator-validator",
+      "category": "generators"
+    },
+    {
+      "title": "Barcode Generator",
+      "icon": "fas fa-barcode",
+      "description": "Generate barcodes in various formats.",
+      "url": "/generators/barcode-generator",
+      "category": "generators"
+    },
+    {
+      "title": "QR Code Generator",
+      "icon": "fas fa-qrcode",
+      "description": "Generate QR codes for various purposes.",
+      "url": "/generators/qr-code-generator",
+      "category": "generators"
+    },
+    {
+      "title": "Morse Code Converter",
+      "icon": "fas fa-signal",
+      "description": "Convert text to and from Morse code.",
+      "url": "/generators/morse-code-converter",
+      "category": "generators"
+    },
+    {
+      "title": "CSR Generator",
+      "icon": "fas fa-key",
+      "description": "Generate Certificate Signing Requests (CSRs) for SSL certificates.",
+      "url": "/certificate-tools/csr-generator",
+      "category": "certificate-tools"
+    },
+    {
+      "title": "Certificate Decoder",
+      "icon": "fas fa-shield-alt",
+      "description": "Decode SSL certificates to view their details.",
+      "url": "/certificate-tools/certificate-decoder",
+      "category": "certificate-tools"
+    },
+    {
+      "title": "Certificate Validator",
+      "icon": "fas fa-check-circle",
+      "description": "Validate SSL certificates to ensure their authenticity.",
+      "url": "/certificate-tools/certificate-validator",
+      "category": "certificate-tools"
+    },
+    {
+      "title": "PEM DER Converter",
+      "icon": "fas fa-exchange-alt",
+      "description": "Convert between PEM and DER certificate formats.",
+      "url": "/certificate-tools/pem-der-converter",
+      "category": "certificate-tools"
+    },
+    {
+      "title": "Private Key Decoder",
+      "icon": "fas fa-key",
+      "description": "Decode private keys to view their details.",
+      "url": "/certificate-tools/private-key-decoder",
+      "category": "certificate-tools"
+    },
+    {
+      "title": "Public Key Extractor",
+      "icon": "fas fa-key",
+      "description": "Extract public keys from certificates or private keys.",
+      "url": "/certificate-tools/public-key-extractor",
+      "category": "certificate-tools"
+    },
+    {
+      "title": "Key Pair Generator",
+      "icon": "fas fa-key",
+      "description": "Generate public-private key pairs for encryption and digital signatures.",
+      "url": "/certificate-tools/key-pair-generator",
+      "category": "certificate-tools"
+    },
+    {
+      "title": "Self Signed Certificate Generator",
+      "icon": "fas fa-shield-alt",
+      "description": "Generate self-signed SSL certificates for testing purposes.",
+      "url": "/certificate-tools/self-signed-certificate-generator",
+      "category": "certificate-tools"
+    },
+    {
+      "title": "PKCS12 Converter",
+      "icon": "fas fa-exchange-alt",
+      "description": "Convert between PKCS12 and other certificate formats.",
+      "url": "/certificate-tools/pkcs12-converter",
+      "category": "certificate-tools"
+    },
+    {
+      "title": "Cipher Suite Checker",
+      "icon": "fas fa-lock",
+      "description": "Check the supported cipher suites of a web server.",
+      "url": "/certificate-tools/cipher-suite-checker",
+      "category": "certificate-tools"
+    },
+    {
+      "title": "TLS Version Checker",
+      "icon": "fas fa-lock",
+      "description": "Check the supported TLS versions of a web server.",
+      "url": "/certificate-tools/tls-version-checker",
+      "category": "certificate-tools"
+    },
+    {
+      "title": "Code Playground",
+      "icon": "fas fa-code",
+      "description": "Experiment with code in various programming languages.",
+      "url": "/learning/code-playground",
+      "category": "learning"
+    },
+    {
+      "title": "Algorithm Visualizer",
+      "icon": "fas fa-chart-bar",
+      "description": "Visualize how different algorithms work.",
+      "url": "/learning/algorithm-visualizer",
+      "category": "learning"
+    },
+    {
+      "title": "Cheat Sheets",
+      "icon": "fas fa-file-alt",
+      "description": "Access cheat sheets for various programming languages and technologies.",
+      "url": "/learning/cheat-sheets",
+      "category": "learning"
+    },
+    {
+      "title": "Interactive Regex Tester",
+      "icon": "fas fa-search",
+      "description": "Test and learn regular expressions interactively.",
+      "url": "/learning/interactive-regex",
+      "category": "learning"
+    },
+    {
+      "title": "Markdown Editor",
+      "icon": "fas fa-pencil-alt",
+      "description": "Write and preview Markdown content.",
+      "url": "/learning/markdown-editor",
+      "category": "learning"
+    },
+    {
+      "title": "Unit Converter",
+      "icon": "fas fa-balance-scale",
+      "description": "Convert between different units of measurement.",
+      "url": "/developer/unit-converter",
+      "category": "developer"
+    },
+    {
+      "title": "Color Palette Generator",
+      "icon": "fas fa-palette",
+      "description": "Generate color palettes for your designs.",
+      "url": "/developer/color-palette",
+      "category": "developer"
+    },
+    {
+      "title": "Log Analyzer",
+      "icon": "fas fa-file-alt",
+      "description": "Analyze log files to identify errors and trends.",
+      "url": "/developer/log-analyzer",
+      "category": "developer"
+    },
+    {
+      "title": "JSONPath XPath Tester",
+      "icon": "fas fa-search",
+      "description": "Test JSONPath and XPath expressions.",
+      "url": "/developer/jsonpath-xpath-tester",
+      "category": "developer"
+    },
+    {
+      "title": "Webpage Speed Test",
+      "icon": "fas fa-tachometer-alt",
+      "description": "Test the loading speed of your webpages.",
+      "url": "/developer/speed-test",
+      "category": "developer"
+    },
+    {
+      "title": "Meta Tag Generator",
+      "icon": "fas fa-code",
+      "description": "Generate meta tags for your webpages.",
+      "url": "/developer/meta-tag-generator",
+      "category": "developer"
+    },
+    {
+      "title": "Robots.txt Generator",
+      "icon": "fas fa-robot",
+      "description": "Generate robots.txt files to control search engine crawlers.",
+      "url": "/developer/robots-txt-generator",
+      "category": "developer"
+    },
+    {
+      "title": "Sitemap Generator",
+      "icon": "fas fa-sitemap",
+      "description": "Generate sitemaps for your websites.",
+      "url": "/developer/sitemap-generator",
+      "category": "developer"
+    },
+    {
+      "title": "Color Contrast Checker",
+      "icon": "fas fa-adjust",
+      "description": "Check the color contrast between two colors for accessibility.",
+      "url": "/accessibility/color-contrast",
+      "category": "accessibility"
+    },
+    {
+      "title": "HTML Accessibility Checker",
+      "icon": "fas fa-wheelchair",
+      "description": "Check the accessibility of your HTML code.",
+      "url": "/accessibility/html-accessibility",
+      "category": "accessibility"
+    },
+    {
+      "title": "Pseudocode Converter",
+      "icon": "fas fa-code",
+      "description": "Convert pseudocode to various programming languages.",
+      "url": "/student/pseudocode-converter",
+      "category": "student"
+    },
+    {
+      "title": "Code Complexity Analyzer",
+      "icon": "fas fa-chart-line",
+      "description": "Analyze the complexity of your code.",
+      "url": "/student/complexity-analyzer",
+      "category": "student"
+    }
+  ]
+}
