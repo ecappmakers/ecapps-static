@@ -1,0 +1,34 @@
+[
+  {
+    "id": "testimonial1",
+    "name": "Sarah Johnson",
+    "role": "Bride",
+    "content": "Madhu Manish Digi Tech Studio captured our wedding day perfectly! The photographer was professional, creative, and made us feel so comfortable. The photos exceeded our expectations and will be treasured for a lifetime.",
+    "avatar": "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "rating": 5
+  },
+  {
+    "id": "testimonial2",
+    "name": "Michael Chen",
+    "role": "Corporate Client",
+    "content": "We hired Madhu Manish Digi Tech Studio for our annual corporate event, and they delivered exceptional photos that perfectly captured the essence of our company culture. Their attention to detail and professionalism were outstanding.",
+    "avatar": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "rating": 5
+  },
+  {
+    "id": "testimonial3",
+    "name": "Emily Rodriguez",
+    "role": "Portrait Client",
+    "content": "My portrait session was such a fun experience! The photographer made me feel so comfortable and knew exactly how to capture my best angles. The final photos were stunning and delivered promptly.",
+    "avatar": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "rating": 4
+  },
+  {
+    "id": "testimonial4",
+    "name": "David & Lisa Thompson",
+    "role": "Family Photoshoot",
+    "content": "Our family photoshoot with Madhu Manish Digi Tech Studio was amazing! Even our toddler, who never sits still, was engaged and happy throughout the session. The photos captured our family bonds beautifully.",
+    "avatar": "https://images.pexels.com/photos/936119/pexels-photo-936119.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "rating": 5
+  }
+]
