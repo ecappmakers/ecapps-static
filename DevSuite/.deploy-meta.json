@@ -1,7 +1,7 @@
 ﻿{
     "source_sha":  "6339903fd548feaa1bc29d6b9c1e2e6d89257dd5",
-    "deployed_at":  "2026-11-06T14:03:58Z",
-    "cdn_url":  "https://cdn.jsdelivr.net/gh/ecappmakers/ecapps-static@devsuite-v3.1.7/devsuite",
-    "release_tag":  "v3.1.7",
+    "deployed_at":  "2026-11-06T14:19:00Z",
+    "cdn_url":  "https://cdn.jsdelivr.net/gh/ecappmakers/ecapps-static@devsuite-v3.1.8/devsuite",
+    "release_tag":  "v3.1.8",
     "source_repo":  "ecappmakers/DevSuite"
 }
