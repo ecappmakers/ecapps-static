@@ -1,7 +1,7 @@
 ﻿{
     "source_sha":  "5330aba90e26d2ba47c9d4b757c84d3fb481fe26",
-    "deployed_at":  "2026-11-06T13:41:08Z",
-    "cdn_url":  "https://cdn.jsdelivr.net/gh/ecappmakers/ecapps-static@friends-electricals-v26.0.3/friends-electricals",
-    "release_tag":  "v26.0.3",
+    "deployed_at":  "2026-11-06T13:57:59Z",
+    "cdn_url":  "https://cdn.jsdelivr.net/gh/ecappmakers/ecapps-static@friends-electricals-v26.0.4/friends-electricals",
+    "release_tag":  "v26.0.4",
     "source_repo":  "ecappmakers/friends-electricals"
 }
