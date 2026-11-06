@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EC App Makers Studio - Brand Assets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+    <style>
+        body { font-family: 'Outfit', sans-serif; transition: background-color 0.3s, color 0.3s; }
+        
+        .checker-bg-light {
+            background-color: #f3f4f6;
+            background-image: linear-gradient(45deg, #e5e7eb 25%, transparent 25%), 
+                              linear-gradient(-45deg, #e5e7eb 25%, transparent 25%), 
+                              linear-gradient(45deg, transparent 75%, #e5e7eb 75%), 
+                              linear-gradient(-45deg, transparent 75%, #e5e7eb 75%);
+            background-size: 20px 20px;
+        }
+        .dark .checker-bg-light {
+            background-color: #1f2937;
+            background-image: linear-gradient(45deg, #374151 25%, transparent 25%), 
+                              linear-gradient(-45deg, #374151 25%, transparent 25%), 
+                              linear-gradient(45deg, transparent 75%, #374151 75%), 
+                              linear-gradient(-45deg, transparent 75%, #374151 75%);
+        }
+
+        /* Preview Overrides */
+        .neutral-stop-1 { stop-color: #000000; }
+        .neutral-stop-2 { stop-color: #475569; }
+        .neutral-stop-3 { stop-color: #000000; }
+
+        /* Dark Mode Overrides */
+        @media (prefers-color-scheme: dark) {
+            .ec-halo-global { stroke: #000000 !important; }
+            .neutral-stop-1 { stop-color: #ffffff; }
+            .neutral-stop-2 { stop-color: #94a3b8; }
+            .neutral-stop-3 { stop-color: #ffffff; }
+        }
+        
+        /* Force preview colors to match toggle state */
+        body.dark .ec-halo-global { stroke: #000000 !important; }
+        body.dark .neutral-stop-1 { stop-color: #ffffff !important; }
+        body.dark .neutral-stop-2 { stop-color: #94a3b8 !important; }
+        body.dark .neutral-stop-3 { stop-color: #ffffff !important; }
+        body.dark .ec-tagline-global { fill: #94a3b8 !important; }
+
+        body:not(.dark) .ec-halo-global { stroke: #ffffff !important; }
+        body:not(.dark) .neutral-stop-1 { stop-color: #000000 !important; }
+        body:not(.dark) .neutral-stop-2 { stop-color: #475569 !important; }
+        body:not(.dark) .neutral-stop-3 { stop-color: #000000 !important; }
+        body:not(.dark) .ec-tagline-global { fill: #64748b !important; }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-800 dark:bg-slate-900 dark:text-slate-200 p-8 transition-colors duration-300">
+
+    <div class="max-w-5xl mx-auto space-y-12">
+        
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <h1 class="text-3xl font-bold text-gray-900 dark:text-white">Brand Assets</h1>
+                <p class="text-gray-500 dark:text-gray-400">EC App Makers Studio</p>
+                <a href="https://ecapps.in" class="text-amber-500 hover:text-amber-600 text-sm font-medium">ecapps.in</a>
+            </div>
+
+            <button id="theme-toggle" class="flex items-center gap-2 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 px-4 py-2 rounded-full shadow-sm hover:shadow-md transition cursor-pointer">
+                <div id="icon-sun" class="hidden dark:block text-amber-400">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                </div>
+                <div id="icon-moon" class="block dark:hidden text-slate-600">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                </div>
+                <span class="text-sm font-medium">Toggle Theme</span>
+            </button>
+        </div>
+
+        <!-- 1. Main Horizontal Logo -->
+        <div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 transition-colors">
+            <div class="flex justify-between items-end mb-6">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-gray-400">Adaptive Horizontal Logo</h2>
+                <span class="text-xs bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200 px-2 py-1 rounded">High-Gloss Gold</span>
+            </div>
+            
+            <div class="checker-bg-light p-8 rounded-lg flex items-center justify-center overflow-hidden">
+                <svg class="preview-svg" width="600" height="150" viewBox="0 0 600 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <!-- Brighter Gold Gradient -->
+                        <linearGradient id="main-text-gold" x1="0%" y1="0%" x2="200%" y2="0%">
+                            <stop offset="0%" stop-color="#d97706" /> <!-- Rich Gold -->
+                            <stop offset="25%" stop-color="#fbbf24" /> <!-- Bright Gold -->
+                            <stop offset="50%" stop-color="#ffffff" /> <!-- Pure Shine -->
+                            <stop offset="75%" stop-color="#fbbf24" /> <!-- Bright Gold -->
+                            <stop offset="100%" stop-color="#d97706" /> <!-- Rich Gold -->
+                            <animate attributeName="x1" from="-100%" to="100%" dur="3s" repeatCount="indefinite" />
+                            <animate attributeName="x2" from="100%" to="300%" dur="3s" repeatCount="indefinite" />
+                        </linearGradient>
+
+                        <!-- Icon Gradient (User Space) -->
+                        <linearGradient id="main-icon-gold" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="512" y2="0">
+                            <stop offset="0%" stop-color="#d97706" />
+                            <stop offset="25%" stop-color="#fbbf24" />
+                            <stop offset="50%" stop-color="#ffffff" />
+                            <stop offset="75%" stop-color="#fbbf24" />
+                            <stop offset="100%" stop-color="#d97706" />
+                            <animate attributeName="x1" from="-256" to="256" dur="3s" repeatCount="indefinite" />
+                            <animate attributeName="x2" from="256" to="768" dur="3s" repeatCount="indefinite" />
+                        </linearGradient>
+
+                        <linearGradient id="main-neutral-grad" x1="0%" y1="0%" x2="200%" y2="0%">
+                            <stop class="neutral-stop-1" offset="0%" />
+                            <stop class="neutral-stop-2" offset="50%" />
+                            <stop class="neutral-stop-3" offset="100%" />
+                            <animate attributeName="x1" from="-100%" to="100%" dur="4s" repeatCount="indefinite" />
+                            <animate attributeName="x2" from="100%" to="300%" dur="4s" repeatCount="indefinite" />
+                        </linearGradient>
+                    </defs>
+                    <style>
+                        .ec-halo-global { stroke: #ffffff; }
+                        .ec-accent-main { stroke: url(#main-icon-gold); }
+                        .ec-text-gold-main { fill: url(#main-text-gold); }
+                        .ec-neutral-main { stroke: url(#main-neutral-grad); }
+                        .ec-text-neutral-main { fill: url(#main-neutral-grad); }
+                        .ec-tagline-global { fill: #64748b; }
+                    </style>
+                    <g transform="translate(10, 10) scale(0.5)">
+                        <path class="ec-halo-global" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path class="ec-halo-global" d="M160 128 H 64" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- Body -->
+                        <path class="ec-neutral-main" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- Accent (Center Stroke) -->
+                        <path class="ec-accent-main" d="M160 128 H 64" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <g font-family="Outfit, sans-serif">
+                        <text x="160" y="75" font-size="42" font-weight="700" letter-spacing="-0.5">
+                            <tspan class="ec-text-neutral-main">EC </tspan><tspan class="ec-text-gold-main">App Makers</tspan><tspan class="ec-text-neutral-main"> Studio</tspan>
+                        </text>
+                        <text class="ec-tagline-global" x="162" y="105" font-size="18" font-weight="400" letter-spacing="2.5" style="text-transform: uppercase;">Innovating Digital Solutions</text>
+                    </g>
+                </svg>
+            </div>
+            <div class="mt-4 flex justify-between items-center">
+                <button onclick="copyToClipboard('svg-main')" class="text-sm bg-gray-900 text-white px-4 py-2 rounded hover:bg-gray-700 transition">Copy SVG</button>
+            </div>
+            <textarea id="svg-main" class="hidden">
+<svg width="600" height="150" viewBox="0 0 600 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="main-text-gold" x1="0%" y1="0%" x2="200%" y2="0%"><stop offset="0%" stop-color="#d97706"/><stop offset="25%" stop-color="#fbbf24"/><stop offset="50%" stop-color="#ffffff"/><stop offset="75%" stop-color="#fbbf24"/><stop offset="100%" stop-color="#d97706"/><animate attributeName="x1" from="-100%" to="100%" dur="3s" repeatCount="indefinite"/><animate attributeName="x2" from="100%" to="300%" dur="3s" repeatCount="indefinite"/></linearGradient>
+        <linearGradient id="main-icon-gold" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="512" y2="0"><stop offset="0%" stop-color="#d97706"/><stop offset="25%" stop-color="#fbbf24"/><stop offset="50%" stop-color="#ffffff"/><stop offset="75%" stop-color="#fbbf24"/><stop offset="100%" stop-color="#d97706"/><animate attributeName="x1" from="-256" to="256" dur="3s" repeatCount="indefinite"/><animate attributeName="x2" from="256" to="768" dur="3s" repeatCount="indefinite"/></linearGradient>
+        <linearGradient id="main-neutral-grad" x1="0%" y1="0%" x2="200%" y2="0%"><stop class="neutral-stop-1" offset="0%"/><stop class="neutral-stop-2" offset="50%"/><stop class="neutral-stop-3" offset="100%"/><animate attributeName="x1" from="-100%" to="100%" dur="4s" repeatCount="indefinite"/><animate attributeName="x2" from="100%" to="300%" dur="4s" repeatCount="indefinite"/></linearGradient>
+    </defs>
+    <style>.ec-halo{stroke:#ffffff}.ec-accent{stroke:url(#main-icon-gold)}.ec-gold-text{fill:url(#main-text-gold)}.ec-neutral{stroke:url(#main-neutral-grad)}.ec-neutral-text{fill:url(#main-neutral-grad)}.ec-tagline{fill:#64748b}.neutral-stop-1{stop-color:#000000}.neutral-stop-2{stop-color:#475569}.neutral-stop-3{stop-color:#000000}@media(prefers-color-scheme:dark){.ec-halo{stroke:#000000}.neutral-stop-1{stop-color:#ffffff}.neutral-stop-2{stop-color:#94a3b8}.neutral-stop-3{stop-color:#ffffff}.ec-tagline{fill:#94a3b8}}</style>
+    <g transform="translate(10, 10) scale(0.5)"><path class="ec-halo" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/><path class="ec-halo" d="M160 128 H 64" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/><path class="ec-neutral" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/><path class="ec-accent" d="M160 128 H 64" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/></g><g font-family="Arial, sans-serif"><text x="160" y="75" font-size="42" font-weight="bold" letter-spacing="-0.5"><tspan class="ec-neutral-text">EC </tspan><tspan class="ec-gold-text">App Makers</tspan><tspan class="ec-neutral-text"> Studio</tspan></text><text class="ec-tagline" x="162" y="105" font-size="18" font-weight="normal" letter-spacing="2.5" style="text-transform: uppercase;">Innovating Digital Solutions</text></g>
+</svg>
+            </textarea>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- 2. Boxed App Icon -->
+            <div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 transition-colors">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">App Icon (Boxed)</h2>
+                <div class="checker-bg-light p-8 rounded-lg flex items-center justify-center">
+                    <svg class="preview-svg" width="180" height="180" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <!-- Use userSpaceOnUse to fix horizontal line visibility issue -->
+                            <linearGradient id="app-gold-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="512" y2="0">
+                                <stop offset="0%" stop-color="#d97706" />
+                                <stop offset="25%" stop-color="#fbbf24" />
+                                <stop offset="50%" stop-color="#ffffff" />
+                                <stop offset="75%" stop-color="#fbbf24" />
+                                <stop offset="100%" stop-color="#d97706" />
+                                <animate attributeName="x1" from="-256" to="256" dur="3s" repeatCount="indefinite" />
+                                <animate attributeName="x2" from="256" to="768" dur="3s" repeatCount="indefinite" />
+                            </linearGradient>
+                            <linearGradient id="app-neutral-grad" x1="0%" y1="0%" x2="200%" y2="0%">
+                                <stop class="neutral-stop-1" offset="0%" />
+                                <stop class="neutral-stop-2" offset="50%" />
+                                <stop class="neutral-stop-3" offset="100%" />
+                                <animate attributeName="x1" from="-100%" to="100%" dur="4s" repeatCount="indefinite" />
+                                <animate attributeName="x2" from="100%" to="300%" dur="4s" repeatCount="indefinite" />
+                            </linearGradient>
+                        </defs>
+                        <style>
+                            .ec-halo-global { stroke: #ffffff; }
+                            .ec-border-app { stroke: url(#app-gold-grad); }
+                            .ec-accent-app { stroke: url(#app-gold-grad); }
+                            .ec-neutral-app { stroke: url(#app-neutral-grad); }
+                        </style>
+                        <!-- Gold Border -->
+                        <rect class="ec-border-app" x="24" y="24" width="208" height="208" rx="40" stroke-width="16" stroke-linecap="round"/>
+                        <g transform="translate(25.6 25.6) scale(0.8)">
+                            <path class="ec-halo-global" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="ec-halo-global" d="M160 128 H 64" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+                            <!-- Body -->
+                            <path class="ec-neutral-app" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+                            <!-- Accent -->
+                            <path class="ec-accent-app" d="M160 128 H 64" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="mt-4 flex justify-between items-center">
+                    <button onclick="copyToClipboard('svg-app')" class="text-sm bg-gray-900 text-white px-4 py-2 rounded hover:bg-gray-700 transition">Copy SVG</button>
+                </div>
+                <textarea id="svg-app" class="hidden">
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="app-gold-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="512" y2="0"><stop offset="0%" stop-color="#d97706"/><stop offset="25%" stop-color="#fbbf24"/><stop offset="50%" stop-color="#ffffff"/><stop offset="75%" stop-color="#fbbf24"/><stop offset="100%" stop-color="#d97706"/><animate attributeName="x1" from="-256" to="256" dur="3s" repeatCount="indefinite"/><animate attributeName="x2" from="256" to="768" dur="3s" repeatCount="indefinite"/></linearGradient>
+        <linearGradient id="app-neutral-grad" x1="0%" y1="0%" x2="200%" y2="0%"><stop class="neutral-stop-1" offset="0%"/><stop class="neutral-stop-2" offset="50%"/><stop class="neutral-stop-3" offset="100%"/><animate attributeName="x1" from="-100%" to="100%" dur="4s" repeatCount="indefinite"/><animate attributeName="x2" from="100%" to="300%" dur="4s" repeatCount="indefinite"/></linearGradient>
+    </defs>
+    <style>.ec-halo{stroke:#ffffff}.ec-border{stroke:url(#app-gold-grad)}.ec-accent{stroke:url(#app-gold-grad)}.ec-neutral{stroke:url(#app-neutral-grad)}.neutral-stop-1{stop-color:#000000}.neutral-stop-2{stop-color:#475569}.neutral-stop-3{stop-color:#000000}@media(prefers-color-scheme:dark){.ec-halo{stroke:#000000}.neutral-stop-1{stop-color:#ffffff}.neutral-stop-2{stop-color:#94a3b8}.neutral-stop-3{stop-color:#ffffff}}</style>
+    <rect class="ec-border" x="24" y="24" width="208" height="208" rx="40" stroke-width="16" stroke-linecap="round"/>
+    <g transform="translate(25.6 25.6) scale(0.8)"><path class="ec-halo" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/><path class="ec-halo" d="M160 128 H 64" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/><path class="ec-neutral" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/><path class="ec-accent" d="M160 128 H 64" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>
+                </textarea>
+            </div>
+
+            <!-- 3. Favicon / Adaptive Icon -->
+            <div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 transition-colors">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">Favicon (Transparent)</h2>
+                <div class="checker-bg-light p-8 rounded-lg flex items-center justify-center">
+                    <svg class="preview-svg" width="128" height="128" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                             <!-- userSpaceOnUse to fix horizontal line visibility issue -->
+                            <linearGradient id="fav-gold-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="512" y2="0">
+                                <stop offset="0%" stop-color="#d97706" />
+                                <stop offset="25%" stop-color="#fbbf24" />
+                                <stop offset="50%" stop-color="#ffffff" />
+                                <stop offset="75%" stop-color="#fbbf24" />
+                                <stop offset="100%" stop-color="#d97706" />
+                                <animate attributeName="x1" from="-256" to="256" dur="3s" repeatCount="indefinite" />
+                                <animate attributeName="x2" from="256" to="768" dur="3s" repeatCount="indefinite" />
+                            </linearGradient>
+                            <linearGradient id="fav-neutral-grad" x1="0%" y1="0%" x2="200%" y2="0%">
+                                <stop class="neutral-stop-1" offset="0%" />
+                                <stop class="neutral-stop-2" offset="50%" />
+                                <stop class="neutral-stop-3" offset="100%" />
+                                <animate attributeName="x1" from="-100%" to="100%" dur="4s" repeatCount="indefinite" />
+                                <animate attributeName="x2" from="100%" to="300%" dur="4s" repeatCount="indefinite" />
+                            </linearGradient>
+                        </defs>
+                        <style>
+                            .ec-halo-global { stroke: #ffffff; }
+                            .ec-accent-fav { stroke: url(#fav-gold-grad); }
+                            .ec-neutral-fav { stroke: url(#fav-neutral-grad); }
+                        </style>
+                        <path class="ec-halo-global" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path class="ec-halo-global" d="M160 128 H 64" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path class="ec-neutral-fav" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path class="ec-accent-fav" d="M160 128 H 64" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="mt-4 flex justify-between items-center">
+                    <button onclick="copyToClipboard('svg-fav')" class="text-sm bg-gray-900 text-white px-4 py-2 rounded hover:bg-gray-700 transition">Copy SVG</button>
+                </div>
+                <textarea id="svg-fav" class="hidden">
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="fav-gold-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="512" y2="0"><stop offset="0%" stop-color="#d97706"/><stop offset="25%" stop-color="#fbbf24"/><stop offset="50%" stop-color="#ffffff"/><stop offset="75%" stop-color="#fbbf24"/><stop offset="100%" stop-color="#d97706"/><animate attributeName="x1" from="-256" to="256" dur="3s" repeatCount="indefinite"/><animate attributeName="x2" from="256" to="768" dur="3s" repeatCount="indefinite"/></linearGradient>
+        <linearGradient id="fav-neutral-grad" x1="0%" y1="0%" x2="200%" y2="0%"><stop class="neutral-stop-1" offset="0%"/><stop class="neutral-stop-2" offset="50%"/><stop class="neutral-stop-3" offset="100%"/><animate attributeName="x1" from="-100%" to="100%" dur="4s" repeatCount="indefinite"/><animate attributeName="x2" from="100%" to="300%" dur="4s" repeatCount="indefinite"/></linearGradient>
+    </defs>
+    <style>.ec-halo{stroke:#ffffff}.ec-accent{stroke:url(#fav-gold-grad)}.ec-neutral{stroke:url(#fav-neutral-grad)}.neutral-stop-1{stop-color:#000000}.neutral-stop-2{stop-color:#475569}.neutral-stop-3{stop-color:#000000}@media(prefers-color-scheme:dark){.ec-halo{stroke:#000000}.neutral-stop-1{stop-color:#ffffff}.neutral-stop-2{stop-color:#94a3b8}.neutral-stop-3{stop-color:#ffffff}}</style>
+    <path class="ec-halo" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/><path class="ec-halo" d="M160 128 H 64" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/><path class="ec-neutral" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/><path class="ec-accent" d="M160 128 H 64" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </textarea>
+            </div>
+        </div>
+
+        <!-- 4. Horizontal Logo (Boxed) -->
+        <div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 transition-colors">
+            <div class="flex justify-between items-end mb-6">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-gray-400">Horizontal Logo (Boxed)</h2>
+                <span class="text-xs bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200 px-2 py-1 rounded">High-Gloss Gold</span>
+            </div>
+            
+            <div class="checker-bg-light p-8 rounded-lg flex items-center justify-center overflow-hidden">
+                <svg class="preview-svg" width="600" height="150" viewBox="0 0 600 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <!-- Text/Box Gradient (Bounding Box) -->
+                        <linearGradient id="hbox-gold-grad" x1="0%" y1="0%" x2="200%" y2="0%">
+                            <stop offset="0%" stop-color="#d97706" />
+                            <stop offset="25%" stop-color="#fbbf24" />
+                            <stop offset="50%" stop-color="#ffffff" />
+                            <stop offset="75%" stop-color="#fbbf24" />
+                            <stop offset="100%" stop-color="#d97706" />
+                            <animate attributeName="x1" from="-100%" to="100%" dur="3s" repeatCount="indefinite" />
+                            <animate attributeName="x2" from="100%" to="300%" dur="3s" repeatCount="indefinite" />
+                        </linearGradient>
+                         
+                        <!-- Icon Gradient (User Space) -->
+                        <linearGradient id="hbox-icon-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="512" y2="0">
+                            <stop offset="0%" stop-color="#d97706" />
+                            <stop offset="25%" stop-color="#fbbf24" />
+                            <stop offset="50%" stop-color="#ffffff" />
+                            <stop offset="75%" stop-color="#fbbf24" />
+                            <stop offset="100%" stop-color="#d97706" />
+                            <animate attributeName="x1" from="-256" to="256" dur="3s" repeatCount="indefinite" />
+                            <animate attributeName="x2" from="256" to="768" dur="3s" repeatCount="indefinite" />
+                        </linearGradient>
+
+                        <linearGradient id="hbox-neutral-grad" x1="0%" y1="0%" x2="200%" y2="0%">
+                            <stop class="neutral-stop-1" offset="0%" />
+                            <stop class="neutral-stop-2" offset="50%" />
+                            <stop class="neutral-stop-3" offset="100%" />
+                            <animate attributeName="x1" from="-100%" to="100%" dur="4s" repeatCount="indefinite" />
+                            <animate attributeName="x2" from="100%" to="300%" dur="4s" repeatCount="indefinite" />
+                        </linearGradient>
+                    </defs>
+                    <style>
+                        .ec-halo-global { stroke: #ffffff; }
+                        .ec-border-hbox { stroke: url(#hbox-gold-grad); }
+                        .ec-accent-hbox { stroke: url(#hbox-icon-grad); }
+                        .ec-text-gold-hbox { fill: url(#hbox-gold-grad); }
+                        .ec-neutral-hbox { stroke: url(#hbox-neutral-grad); }
+                        .ec-text-neutral-hbox { fill: url(#hbox-neutral-grad); }
+                        .ec-tagline-global { fill: #64748b; }
+                    </style>
+                    <g transform="translate(10, 10) scale(0.5)">
+                        <!-- Border -->
+                        <rect class="ec-border-hbox" x="24" y="24" width="208" height="208" rx="40" stroke-width="16" stroke-linecap="round"/>
+                        <g transform="translate(25.6 25.6) scale(0.8)">
+                            <path class="ec-halo-global" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="ec-halo-global" d="M160 128 H 64" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+                            <!-- Body -->
+                            <path class="ec-neutral-hbox" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+                            <!-- Accent -->
+                            <path class="ec-accent-hbox" d="M160 128 H 64" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                    </g>
+                    <g font-family="Outfit, sans-serif">
+                        <text x="160" y="75" font-size="42" font-weight="700" letter-spacing="-0.5">
+                            <tspan class="ec-text-neutral-hbox">EC </tspan><tspan class="ec-text-gold-hbox">App Makers</tspan><tspan class="ec-text-neutral-hbox"> Studio</tspan>
+                        </text>
+                        <text class="ec-tagline-global" x="162" y="105" font-size="18" font-weight="400" letter-spacing="2.5" style="text-transform: uppercase;">Innovating Digital Solutions</text>
+                    </g>
+                </svg>
+            </div>
+            <div class="mt-4 flex justify-between items-center">
+                <button onclick="copyToClipboard('svg-horiz-boxed')" class="text-sm bg-gray-900 text-white px-4 py-2 rounded hover:bg-gray-700 transition">Copy SVG</button>
+            </div>
+            <textarea id="svg-horiz-boxed" class="hidden">
+<svg width="600" height="150" viewBox="0 0 600 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="hbox-gold-grad" x1="0%" y1="0%" x2="200%" y2="0%"><stop offset="0%" stop-color="#d97706"/><stop offset="25%" stop-color="#fbbf24"/><stop offset="50%" stop-color="#ffffff"/><stop offset="75%" stop-color="#fbbf24"/><stop offset="100%" stop-color="#d97706"/><animate attributeName="x1" from="-100%" to="100%" dur="3s" repeatCount="indefinite"/><animate attributeName="x2" from="100%" to="300%" dur="3s" repeatCount="indefinite"/></linearGradient>
+        <linearGradient id="hbox-icon-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="512" y2="0"><stop offset="0%" stop-color="#d97706"/><stop offset="25%" stop-color="#fbbf24"/><stop offset="50%" stop-color="#ffffff"/><stop offset="75%" stop-color="#fbbf24"/><stop offset="100%" stop-color="#d97706"/><animate attributeName="x1" from="-256" to="256" dur="3s" repeatCount="indefinite"/><animate attributeName="x2" from="256" to="768" dur="3s" repeatCount="indefinite"/></linearGradient>
+        <linearGradient id="hbox-neutral-grad" x1="0%" y1="0%" x2="200%" y2="0%"><stop class="neutral-stop-1" offset="0%"/><stop class="neutral-stop-2" offset="50%"/><stop class="neutral-stop-3" offset="100%"/><animate attributeName="x1" from="-100%" to="100%" dur="4s" repeatCount="indefinite"/><animate attributeName="x2" from="100%" to="300%" dur="4s" repeatCount="indefinite"/></linearGradient>
+    </defs>
+    <style>.ec-halo{stroke:#ffffff}.ec-border{stroke:url(#hbox-gold-grad)}.ec-accent{stroke:url(#hbox-icon-grad)}.ec-gold-text{fill:url(#hbox-gold-grad)}.ec-neutral{stroke:url(#hbox-neutral-grad)}.ec-neutral-text{fill:url(#hbox-neutral-grad)}.ec-tagline{fill:#64748b}.neutral-stop-1{stop-color:#000000}.neutral-stop-2{stop-color:#475569}.neutral-stop-3{stop-color:#000000}@media(prefers-color-scheme:dark){.ec-halo{stroke:#000000}.neutral-stop-1{stop-color:#ffffff}.neutral-stop-2{stop-color:#94a3b8}.neutral-stop-3{stop-color:#ffffff}.ec-tagline{fill:#94a3b8}}</style>
+    <g transform="translate(10, 10) scale(0.5)"><rect class="ec-border" x="24" y="24" width="208" height="208" rx="40" stroke-width="16" stroke-linecap="round"/><g transform="translate(25.6 25.6) scale(0.8)"><path class="ec-halo" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/><path class="ec-halo" d="M160 128 H 64" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/><path class="ec-neutral" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/><path class="ec-accent" d="M160 128 H 64" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/></g></g><g font-family="Arial, sans-serif"><text x="160" y="75" font-size="42" font-weight="bold" letter-spacing="-0.5"><tspan class="ec-neutral-text">EC </tspan><tspan class="ec-gold-text">App Makers</tspan><tspan class="ec-neutral-text"> Studio</tspan></text><text class="ec-tagline" x="162" y="105" font-size="18" font-weight="normal" letter-spacing="2.5" style="text-transform: uppercase;">Innovating Digital Solutions</text></g>
+</svg>
+            </textarea>
+        </div>
+
+    </div>
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const body = document.body;
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            body.classList.add('dark');
+        }
+        toggleBtn.addEventListener('click', () => {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                body.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                body.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+            }
+        });
+        function copyToClipboard(elementId) {
+            const copyText = document.getElementById(elementId);
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); 
+            document.execCommand("copy");
+            const btn = document.querySelector(`button[onclick="copyToClipboard('${elementId}')"]`);
+            const originalText = btn.innerText;
+            btn.innerText = "Copied!";
+            setTimeout(() => btn.innerText = originalText, 2000);
+        }
+    </script>
+</body>
+</html>

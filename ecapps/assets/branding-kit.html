@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EC App Makers Studio - Brand Assets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+  <style>
+    body { font-family: 'Outfit', sans-serif; transition: background-color 0.3s, color 0.3s; }
+
+    /* Background pattern that adapts to theme */
+    .checker-bg {
+      transition: background-color 0.3s;
+    }
+    .checker-bg-light {
+      background-color: #f3f4f6;
+      background-image: linear-gradient(45deg, #e5e7eb 25%, transparent 25%),
+      linear-gradient(-45deg, #e5e7eb 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #e5e7eb 75%),
+      linear-gradient(-45deg, transparent 75%, #e5e7eb 75%);
+      background-size: 20px 20px;
+      background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    }
+    .dark .checker-bg-light {
+      background-color: #1f2937;
+      background-image: linear-gradient(45deg, #374151 25%, transparent 25%),
+      linear-gradient(-45deg, #374151 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #374151 75%),
+      linear-gradient(-45deg, transparent 75%, #374151 75%);
+    }
+
+    /* PREVIEW OVERRIDES
+       These styles ensure the visual preview matches the toggle button on this page.
+       They override the internal SVG media query just for this display.
+    */
+    body.dark .preview-svg .ec-halo { stroke: #000000 !important; }
+    body.dark .preview-svg .ec-body { stroke: #ffffff !important; }
+    body.dark .preview-svg .ec-text { fill: #ffffff !important; }
+    body.dark .preview-svg .ec-tagline { fill: #94a3b8 !important; }
+    body.dark .preview-svg .ec-border { stroke: #ffffff !important; }
+
+    /* Ensure Light Mode is enforced when 'dark' class is NOT present.
+       Updated: Border is now GOLD in light mode override */
+    body:not(.dark) .preview-svg .ec-halo { stroke: #ffffff !important; }
+    body:not(.dark) .preview-svg .ec-body { stroke: #000000 !important; }
+    body:not(.dark) .preview-svg .ec-text { fill: #000000 !important; }
+    body:not(.dark) .preview-svg .ec-tagline { fill: #64748b !important; }
+    body:not(.dark) .preview-svg .ec-border { stroke: #f59e0b !important; }
+  </style>
+</head>
+<body class="bg-gray-50 text-slate-800 dark:bg-slate-900 dark:text-slate-200 p-8 transition-colors duration-300">
+
+<div class="max-w-5xl mx-auto space-y-12">
+
+  <!-- Header & Controls -->
+  <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+    <div class="text-center md:text-left">
+      <h1 class="text-3xl font-bold text-gray-900 dark:text-white">Brand Assets</h1>
+      <p class="text-gray-500 dark:text-gray-400">EC App Makers Studio</p>
+      <a href="https://ecapps.in" class="text-amber-500 hover:text-amber-600 text-sm font-medium">ecapps.in</a>
+    </div>
+
+    <!-- Theme Switcher -->
+    <button id="theme-toggle" class="flex items-center gap-2 bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 px-4 py-2 rounded-full shadow-sm hover:shadow-md transition cursor-pointer">
+      <div id="icon-sun" class="hidden dark:block text-amber-400">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+      </div>
+      <div id="icon-moon" class="block dark:hidden text-slate-600">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+      </div>
+      <span class="text-sm font-medium">Toggle Theme</span>
+    </button>
+  </div>
+
+  <!-- Main Horizontal Logo -->
+  <div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 transition-colors">
+    <div class="flex justify-between items-end mb-6">
+      <h2 class="text-xs font-bold uppercase tracking-widest text-gray-400">Adaptive Horizontal Logo</h2>
+      <span class="text-xs bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200 px-2 py-1 rounded">Auto-Switching</span>
+    </div>
+
+    <div class="checker-bg-light p-8 rounded-lg flex items-center justify-center overflow-hidden">
+      <!-- SVG PREVIEW -->
+      <svg class="preview-svg" width="600" height="150" viewBox="0 0 600 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .ec-halo { stroke: #ffffff; }
+          .ec-body { stroke: #000000; }
+          .ec-text { fill: #000000; }
+          .ec-tagline { fill: #64748b; }
+          @media (prefers-color-scheme: dark) {
+            .ec-halo { stroke: #000000; }
+            .ec-body { stroke: #ffffff; }
+            .ec-text { fill: #ffffff; }
+            .ec-tagline { fill: #94a3b8; }
+          }
+        </style>
+        <g transform="translate(10, 10) scale(0.5)">
+          <path class="ec-halo" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+          <path class="ec-halo" d="M160 128 H 64" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+          <path class="ec-body" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M160 128 H 64" stroke="#f59e0b" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <g font-family="Outfit, sans-serif">
+          <text class="ec-text" x="160" y="75" font-size="42" font-weight="700" letter-spacing="-0.5">
+            EC <tspan fill="#f59e0b">App Makers</tspan> Studio
+          </text>
+          <text class="ec-tagline" x="162" y="105" font-size="18" font-weight="400" letter-spacing="2.5" style="text-transform: uppercase;">
+            Innovating Digital Solutions
+          </text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="mt-4 flex justify-between items-center">
+      <code class="text-xs bg-gray-100 dark:bg-slate-900 dark:text-gray-400 p-2 rounded text-gray-500">Includes @media support</code>
+      <button onclick="copyToClipboard('svg-primary')" class="text-sm bg-gray-900 text-white px-4 py-2 rounded hover:bg-gray-700 transition">Copy SVG Code</button>
+    </div>
+    <textarea id="svg-primary" class="hidden">
+<svg width="600" height="150" viewBox="0 0 600 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .ec-halo { stroke: #ffffff; }
+        .ec-body { stroke: #000000; }
+        .ec-text { fill: #000000; }
+        .ec-tagline { fill: #64748b; }
+        @media (prefers-color-scheme: dark) {
+            .ec-halo { stroke: #000000; }
+            .ec-body { stroke: #ffffff; }
+            .ec-text { fill: #ffffff; }
+            .ec-tagline { fill: #94a3b8; }
+        }
+    </style>
+    <g transform="translate(10, 10) scale(0.5)">
+        <path class="ec-halo" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="ec-halo" d="M160 128 H 64" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="ec-body" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M160 128 H 64" stroke="#f59e0b" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g font-family="Arial, sans-serif">
+        <text class="ec-text" x="160" y="75" font-size="42" font-weight="bold" letter-spacing="-0.5">EC <tspan fill="#f59e0b">App Makers</tspan> Studio</text>
+        <text class="ec-tagline" x="162" y="105" font-size="18" font-weight="normal" letter-spacing="2.5" style="text-transform: uppercase;">Innovating Digital Solutions</text>
+    </g>
+</svg>
+            </textarea>
+  </div>
+
+  <!-- Grid for Other Assets -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+    <!-- Boxed Icon Variant -->
+    <div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 transition-colors">
+      <h2 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">Boxed Icon Variant</h2>
+      <div class="checker-bg-light p-8 rounded-lg flex items-center justify-center">
+
+        <svg class="preview-svg" width="180" height="180" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <style>
+            .ec-halo { stroke: #ffffff; }
+            .ec-body { stroke: #000000; }
+            /* Gold border in light mode */
+            .ec-border { stroke: #f59e0b; }
+            @media (prefers-color-scheme: dark) {
+              .ec-halo { stroke: #000000; }
+              .ec-body { stroke: #ffffff; }
+              .ec-border { stroke: #ffffff; }
+            }
+          </style>
+          <!-- Reduced stroke-width to 16 for lighter feel -->
+          <rect class="ec-border" x="24" y="24" width="208" height="208" rx="40" stroke-width="16" stroke-linecap="round"/>
+
+          <!-- Scaled down icon by 20% to add padding -->
+          <g transform="translate(25.6 25.6) scale(0.8)">
+            <path class="ec-halo" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="ec-halo" d="M160 128 H 64" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="ec-body" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M160 128 H 64" stroke="#f59e0b" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+        </svg>
+
+      </div>
+      <div class="mt-4 flex justify-between items-center">
+        <p class="text-xs text-gray-400">Added padding around icon</p>
+        <button onclick="copyToClipboard('svg-boxed')" class="text-sm bg-gray-900 text-white px-4 py-2 rounded hover:bg-gray-700 transition">Copy SVG Code</button>
+      </div>
+      <textarea id="svg-boxed" class="hidden">
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .ec-halo { stroke: #ffffff; }
+        .ec-body { stroke: #000000; }
+        .ec-border { stroke: #f59e0b; }
+        @media (prefers-color-scheme: dark) {
+            .ec-halo { stroke: #000000; }
+            .ec-body { stroke: #ffffff; }
+            .ec-border { stroke: #ffffff; }
+        }
+    </style>
+    <rect class="ec-border" x="24" y="24" width="208" height="208" rx="40" stroke-width="16" stroke-linecap="round"/>
+    <g transform="translate(25.6 25.6) scale(0.8)">
+        <path class="ec-halo" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="ec-halo" d="M160 128 H 64" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="ec-body" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M160 128 H 64" stroke="#f59e0b" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+</svg>
+                </textarea>
+    </div>
+
+    <!-- Standard Icon / Favicon -->
+    <div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 transition-colors">
+      <h2 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">Adaptive Icon</h2>
+      <div class="checker-bg-light p-8 rounded-lg flex items-center justify-center">
+
+        <svg class="preview-svg" width="128" height="128" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <style>
+            .ec-halo { stroke: #ffffff; }
+            .ec-body { stroke: #000000; }
+            @media (prefers-color-scheme: dark) {
+              .ec-halo { stroke: #000000; }
+              .ec-body { stroke: #ffffff; }
+            }
+          </style>
+          <path class="ec-halo" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+          <path class="ec-halo" d="M160 128 H 64" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+          <path class="ec-body" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M160 128 H 64" stroke="#f59e0b" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+      </div>
+      <div class="mt-4 flex justify-between items-center">
+        <p class="text-xs text-gray-400">Favicon / Meta Tag</p>
+        <button onclick="copyToClipboard('svg-icon')" class="text-sm bg-gray-900 text-white px-4 py-2 rounded hover:bg-gray-700 transition">Copy SVG Code</button>
+      </div>
+      <textarea id="svg-icon" class="hidden">
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .ec-halo { stroke: #ffffff; }
+        .ec-body { stroke: #000000; }
+        @media (prefers-color-scheme: dark) {
+            .ec-halo { stroke: #000000; }
+            .ec-body { stroke: #ffffff; }
+        }
+    </style>
+    <path class="ec-halo" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="ec-halo" d="M160 128 H 64" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="ec-body" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M160 128 H 64" stroke="#f59e0b" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </textarea>
+    </div>
+
+  </div>
+
+  <!-- Horizontal Logo with Boxed Icon -->
+  <div class="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 transition-colors">
+    <div class="flex justify-between items-end mb-6">
+      <h2 class="text-xs font-bold uppercase tracking-widest text-gray-400">Horizontal Logo (Boxed)</h2>
+      <span class="text-xs bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200 px-2 py-1 rounded">Alternative</span>
+    </div>
+
+    <div class="checker-bg-light p-8 rounded-lg flex items-center justify-center overflow-hidden">
+      <!-- SVG PREVIEW -->
+      <svg class="preview-svg" width="600" height="150" viewBox="0 0 600 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .ec-halo { stroke: #ffffff; }
+          .ec-body { stroke: #000000; }
+          .ec-text { fill: #000000; }
+          .ec-tagline { fill: #64748b; }
+          .ec-border { stroke: #f59e0b; }
+          @media (prefers-color-scheme: dark) {
+            .ec-halo { stroke: #000000; }
+            .ec-body { stroke: #ffffff; }
+            .ec-text { fill: #ffffff; }
+            .ec-tagline { fill: #94a3b8; }
+            .ec-border { stroke: #ffffff; }
+          }
+        </style>
+        <g transform="translate(10, 10) scale(0.5)">
+          <!-- Box Border -->
+          <rect class="ec-border" x="24" y="24" width="208" height="208" rx="40" stroke-width="16" stroke-linecap="round"/>
+          <!-- Inner Icon (Scaled & Padded) -->
+          <g transform="translate(25.6 25.6) scale(0.8)">
+            <path class="ec-halo" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="ec-halo" d="M160 128 H 64" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="ec-body" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M160 128 H 64" stroke="#f59e0b" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+        </g>
+        <g font-family="Outfit, sans-serif">
+          <text class="ec-text" x="160" y="75" font-size="42" font-weight="700" letter-spacing="-0.5">
+            EC <tspan fill="#f59e0b">App Makers</tspan> Studio
+          </text>
+          <text class="ec-tagline" x="162" y="105" font-size="18" font-weight="400" letter-spacing="2.5" style="text-transform: uppercase;">
+            Innovating Digital Solutions
+          </text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="mt-4 flex justify-between items-center">
+      <code class="text-xs bg-gray-100 dark:bg-slate-900 dark:text-gray-400 p-2 rounded text-gray-500">Boxed + Horizontal Layout</code>
+      <button onclick="copyToClipboard('svg-horiz-boxed')" class="text-sm bg-gray-900 text-white px-4 py-2 rounded hover:bg-gray-700 transition">Copy SVG Code</button>
+    </div>
+    <textarea id="svg-horiz-boxed" class="hidden">
+<svg width="600" height="150" viewBox="0 0 600 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .ec-halo { stroke: #ffffff; }
+        .ec-body { stroke: #000000; }
+        .ec-text { fill: #000000; }
+        .ec-tagline { fill: #64748b; }
+        .ec-border { stroke: #f59e0b; }
+        @media (prefers-color-scheme: dark) {
+            .ec-halo { stroke: #000000; }
+            .ec-body { stroke: #ffffff; }
+            .ec-text { fill: #ffffff; }
+            .ec-tagline { fill: #94a3b8; }
+            .ec-border { stroke: #ffffff; }
+        }
+    </style>
+    <g transform="translate(10, 10) scale(0.5)">
+        <rect class="ec-border" x="24" y="24" width="208" height="208" rx="40" stroke-width="16" stroke-linecap="round"/>
+        <g transform="translate(25.6 25.6) scale(0.8)">
+            <path class="ec-halo" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="ec-halo" d="M160 128 H 64" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="ec-body" d="M190 64 H 100 A 36 36 0 0 0 64 100 V 156 A 36 36 0 0 0 100 192 H 190" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M160 128 H 64" stroke="#f59e0b" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+    </g>
+    <g font-family="Arial, sans-serif">
+        <text class="ec-text" x="160" y="75" font-size="42" font-weight="bold" letter-spacing="-0.5">EC <tspan fill="#f59e0b">App Makers</tspan> Studio</text>
+        <text class="ec-tagline" x="162" y="105" font-size="18" font-weight="normal" letter-spacing="2.5" style="text-transform: uppercase;">Innovating Digital Solutions</text>
+    </g>
+</svg>
+            </textarea>
+  </div>
+
+</div>
+
+<script>
+  // Toggle Logic
+  const toggleBtn = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  // Check for saved preference or system preference
+  if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark');
+    body.classList.add('dark');
+  } else {
+    document.documentElement.classList.remove('dark');
+    body.classList.remove('dark');
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark');
+      body.classList.remove('dark');
+      localStorage.setItem('color-theme', 'light');
+    } else {
+      document.documentElement.classList.add('dark');
+      body.classList.add('dark');
+      localStorage.setItem('color-theme', 'dark');
+    }
+  });
+
+  function copyToClipboard(elementId) {
+    const copyText = document.getElementById(elementId);
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    const btn = document.querySelector(`button[onclick="copyToClipboard('${elementId}')"]`);
+    const originalText = btn.innerText;
+    btn.innerText = "Copied!";
+    setTimeout(() => btn.innerText = originalText, 2000);
+  }
+</script>
+</body>
+</html>
