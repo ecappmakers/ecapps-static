@@ -1,7 +1,7 @@
 ﻿{
-    "source_sha":  "a3e9d529ad037822e64436be119c90759f1ed072",
-    "deployed_at":  "2026-11-06T15:34:19Z",
-    "cdn_url":  "https://cdn.jsdelivr.net/gh/ecappmakers/ecapps-static@inv8-v1.0.8/inv8",
-    "release_tag":  "v1.0.8",
+    "source_sha":  "ea3c70bab5ac3d154360ffd8578aec4c889ec468",
+    "deployed_at":  "2026-11-06T15:48:21Z",
+    "cdn_url":  "https://cdn.jsdelivr.net/gh/ecappmakers/ecapps-static@inv8-v1.0.9/inv8",
+    "release_tag":  "v1.0.9",
     "source_repo":  "ecappmakers/inv8"
 }
