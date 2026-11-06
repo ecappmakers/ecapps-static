@@ -1,7 +1,7 @@
 ﻿{
     "source_sha":  "ba3d1b576d8ac5bd9f0c6de30836545f9d603676",
-    "deployed_at":  "2026-11-06T13:44:39Z",
-    "cdn_url":  "https://cdn.jsdelivr.net/gh/ecappmakers/ecapps-static@ecapps-v1.12.6/ecapps",
-    "release_tag":  "v1.12.6",
+    "deployed_at":  "2026-11-06T14:17:11Z",
+    "cdn_url":  "https://cdn.jsdelivr.net/gh/ecappmakers/ecapps-static@ecapps-v1.12.7/ecapps",
+    "release_tag":  "v1.12.7",
     "source_repo":  "ecappmakers/ecapps"
 }
