@@ -1,5 +1,7 @@
-{
-  "source_repo": "ecappmakers/madhumanishstudio",
-  "source_sha": "00d99d69cec3f5343e1a5ec15d84b2c7a49ef6ee",
-  "deployed_at": "2026-03-04T18:20:52Z"
+﻿{
+    "source_sha":  "c6153c7563cf3cb5f946f8f687e98924334977d7",
+    "deployed_at":  "2026-11-06T12:22:05Z",
+    "cdn_url":  "https://cdn.jsdelivr.net/gh/ecappmakers/ecapps-static@madhumanishstudio-v1.21.4/madhumanishstudio",
+    "release_tag":  "v1.21.4",
+    "source_repo":  "ecappmakers/madhumanishstudio"
 }
