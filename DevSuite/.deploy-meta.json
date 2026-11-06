@@ -1,5 +1,7 @@
-{
-  "source_repo": "ecappmakers/DevSuite",
-  "source_sha": "3e6aa59fcff7fc86e610a50e989e070385b68c0e",
-  "deployed_at": "2026-02-28T13:14:42Z"
+﻿{
+    "source_sha":  "3cdadd58069d0c23a06914dbcb3f126dc3c9d877",
+    "deployed_at":  "2026-11-06T12:13:54Z",
+    "cdn_url":  "https://cdn.jsdelivr.net/gh/ecappmakers/ecapps-static@devsuite-v3.1.4/devsuite",
+    "release_tag":  "v3.1.4",
+    "source_repo":  "ecappmakers/DevSuite"
 }

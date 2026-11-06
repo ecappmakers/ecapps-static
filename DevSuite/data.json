@@ -777,6 +777,13 @@
       "description": "Analyze the complexity of your code.",
       "url": "/student/complexity-analyzer",
       "category": "student"
+    },
+    {
+      "title": "OpenAPI Spec Validator",
+      "icon": "fas fa-shield-alt",
+      "description": "Validate Swagger 2.0 or OpenAPI 3.0 schemas and preview routes interactively.",
+      "url": "/developer/openapi-validator",
+      "category": "developer"
     }
   ]
-}
+}
