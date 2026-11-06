@@ -1,7 +1,7 @@
 ﻿{
-    "source_sha":  "3cdadd58069d0c23a06914dbcb3f126dc3c9d877",
-    "deployed_at":  "2026-11-06T12:13:54Z",
-    "cdn_url":  "https://cdn.jsdelivr.net/gh/ecappmakers/ecapps-static@devsuite-v3.1.4/devsuite",
-    "release_tag":  "v3.1.4",
+    "source_sha":  "46b0cf9c818c1b1b332a39f650686ac109e89770",
+    "deployed_at":  "2026-11-06T12:19:12Z",
+    "cdn_url":  "https://cdn.jsdelivr.net/gh/ecappmakers/ecapps-static@devsuite-v3.1.5/devsuite",
+    "release_tag":  "v3.1.5",
     "source_repo":  "ecappmakers/DevSuite"
 }
