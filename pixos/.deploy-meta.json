@@ -1,7 +1,7 @@
 ﻿{
-    "source_sha":  "a73d1f36a0aa39fc06905903d649c077061cfc3d",
-    "deployed_at":  "2026-11-06T15:12:17Z",
-    "cdn_url":  "https://cdn.jsdelivr.net/gh/ecappmakers/ecapps-static@pixos-v1.0.12/pixos",
-    "release_tag":  "v1.0.12",
+    "source_sha":  "e421def7899c7ddfa43b74efdca0eb0e8b061321",
+    "deployed_at":  "2026-11-06T15:22:37Z",
+    "cdn_url":  "https://cdn.jsdelivr.net/gh/ecappmakers/ecapps-static@pixos-v1.0.13/pixos",
+    "release_tag":  "v1.0.13",
     "source_repo":  "ecappmakers/pixos"
 }
