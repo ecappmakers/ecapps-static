@@ -1,0 +1,78 @@
+[
+  {
+    "id": "wedding",
+    "title": "Wedding Photography",
+    "description": "Capture your special day with our premium wedding photography service.",
+    "icon": "Heart",
+    "features": [
+      "Full day coverage (up to 10 hours)",
+      "Engagement session included",
+      "Second photographer",
+      "Online gallery with digital downloads",
+      "Custom wedding album (10x10\")",
+      "Printing rights"
+    ],
+    "price": "2,499",
+    "popular": true
+  },
+  {
+    "id": "portrait",
+    "title": "Portrait Sessions",
+    "description": "Professional portrait photography to highlight your unique personality.",
+    "icon": "Camera",
+    "features": [
+      "1-2 hour session",
+      "Multiple outfit changes",
+      "Indoor and outdoor settings",
+      "Professional retouching",
+      "Online gallery with 30+ edited photos",
+      "Print package included"
+    ],
+    "price": "399"
+  },
+  {
+    "id": "event",
+    "title": "Event Coverage",
+    "description": "Comprehensive photography for corporate events, parties, and gatherings.",
+    "icon": "Calendar",
+    "features": [
+      "Flexible hourly coverage",
+      "Fast turnaround time",
+      "Professional lighting setup",
+      "Candid and posed photographs",
+      "Online gallery for easy sharing",
+      "Commercial usage rights available"
+    ],
+    "price": "299/hour"
+  },
+  {
+    "id": "family",
+    "title": "Family Photoshoots",
+    "description": "Create lasting memories with a professional family photography session.",
+    "icon": "Users",
+    "features": [
+      "1 hour session at location of your choice",
+      "Perfect for families of all sizes",
+      "Pet-friendly sessions available",
+      "25+ professionally edited photos",
+      "Print package options",
+      "Mini-sessions available seasonally"
+    ],
+    "price": "349"
+  },
+  {
+    "id": "commercial",
+    "title": "Commercial Photography",
+    "description": "Professional photography for businesses, products, and brands.",
+    "icon": "Building",
+    "features": [
+      "Product photography",
+      "Corporate headshots",
+      "Architecture and real estate",
+      "Food and restaurant photography",
+      "Commercial usage rights",
+      "Custom pricing for large projects"
+    ],
+    "price": "549"
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "category": "Passport Size Photos",
+    "products": [
+      {
+        "name": "Passport Size Photo (4x6 cm) - 4 Count",
+        "price": 40,
+        "description": "Set of 4 high-quality passport size photos.",
+        "image": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&w=200&h=200&fit=crop"
+      },
+      {
+        "name": "Passport Size Photo (4x6 cm) - 8 Count",
+        "price": 70,
+        "description": "Set of 8 high-quality passport size photos.",
+        "image": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&w=200&h=200&fit=crop"
+      },
+      {
+        "name": "Passport Size Photo (4x6 cm) - 16 Count",
+        "price": 120,
+        "description": "Set of 16 high-quality passport size photos.",
+        "image": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&w=200&h=200&fit=crop"
+      },
+      {
+        "name": "Passport Size Photo (4x6 cm) - 32 Count",
+        "price": 200,
+        "description": "Set of 32 high-quality passport size photos.",
+        "image": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&w=200&h=200&fit=crop"
+      }
+    ]
+  },
+  {
+    "category": "Stamp Size Photos",
+    "products": [
+      {
+        "name": "Stamp Size Photo - 4 Count",
+        "price": 30,
+        "description": "Set of 4 stamp size photos for ID cards and applications.",
+        "image": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&w=100&h=100&fit=crop"
+      },
+      {
+        "name": "Stamp Size Photo - 8 Count",
+        "price": 50,
+        "description": "Set of 8 stamp size photos for ID cards and applications.",
+        "image": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&w=100&h=100&fit=crop"
+      },
+      {
+        "name": "Stamp Size Photo - 16 Count",
+        "price": 90,
+        "description": "Set of 16 stamp size photos for ID cards and applications.",
+        "image": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&w=100&h=100&fit=crop"
+      },
+      {
+        "name": "Stamp Size Photo - 32 Count",
+        "price": 160,
+        "description": "Set of 32 stamp size photos for ID cards and applications.",
+        "image": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&w=100&h=100&fit=crop"
+      }
+    ]
+  },
+  {
+    "category": "Photo Frames",
+    "products": [
+      {
+        "name": "4x6 Inch Frame",
+        "price": 120,
+        "description": "Standard size, perfect for small portraits and snapshots.",
+        "image": "https://images.pexels.com/photos/206559/pexels-photo-206559.jpeg?auto=compress&w=400&h=300&fit=crop"
+      },
+      {
+        "name": "5x7 Inch Frame",
+        "price": 150,
+        "description": "Popular size for desk and wall display.",
+        "image": "https://images.pexels.com/photos/206559/pexels-photo-206559.jpeg?auto=compress&w=400&h=300&fit=crop"
+      },
+      {
+        "name": "6x8 Inch Frame",
+        "price": 180,
+        "description": "Ideal for medium-sized photos.",
+        "image": "https://images.pexels.com/photos/206559/pexels-photo-206559.jpeg?auto=compress&w=400&h=300&fit=crop"
+      },
+      {
+        "name": "8x10 Inch Frame",
+        "price": 250,
+        "description": "Great for family portraits and certificates.",
+        "image": "https://images.pexels.com/photos/206559/pexels-photo-206559.jpeg?auto=compress&w=400&h=300&fit=crop"
+      },
+      {
+        "name": "8x12 Inch Frame",
+        "price": 300,
+        "description": "Wider format for group photos.",
+        "image": "https://images.pexels.com/photos/206559/pexels-photo-206559.jpeg?auto=compress&w=400&h=300&fit=crop"
+      },
+      {
+        "name": "10x12 Inch Frame",
+        "price": 350,
+        "description": "Suitable for larger prints and artwork.",
+        "image": "https://images.pexels.com/photos/206559/pexels-photo-206559.jpeg?auto=compress&w=400&h=300&fit=crop"
+      },
+      {
+        "name": "12x16 Inch Frame",
+        "price": 450,
+        "description": "Perfect for posters and large portraits.",
+        "image": "https://images.pexels.com/photos/206559/pexels-photo-206559.jpeg?auto=compress&w=400&h=300&fit=crop"
+      },
+      {
+        "name": "16x20 Inch Frame",
+        "price": 600,
+        "description": "Large format for wall art and displays.",
+        "image": "https://images.pexels.com/photos/206559/pexels-photo-206559.jpeg?auto=compress&w=400&h=300&fit=crop"
+      },
+      {
+        "name": "Custom Sizes",
+        "price": 0,
+        "description": "Frames available in various custom sizes to fit your needs.",
+        "image": "https://images.pexels.com/photos/206559/pexels-photo-206559.jpeg?auto=compress&w=400&h=300&fit=crop"
+      }
+    ]
+  },
+  {
+    "category": "Personalized Printing",
+    "products": [
+      {
+        "name": "Mug Printing",
+        "price": 250,
+        "description": "Custom photo mugs for gifts and occasions.",
+        "image": "https://images.pexels.com/photos/585750/pexels-photo-585750.jpeg?auto=compress&w=400&h=300&fit=crop"
+      },
+      {
+        "name": "T-Shirt Printing",
+        "price": 400,
+        "description": "Personalized t-shirts with your favorite photos or designs.",
+        "image": "https://images.pexels.com/photos/532220/pexels-photo-532220.jpeg?auto=compress&w=400&h=300&fit=crop"
+      },
+      {
+        "name": "Acrylic Printing",
+        "price": 600,
+        "description": "Premium acrylic prints for a modern look.",
+        "image": "https://images.pexels.com/photos/370799/pexels-photo-370799.jpeg?auto=compress&w=400&h=300&fit=crop"
+      }
+    ]
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "id": "wed1",
+    "src": "https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg",
+    "alt": "Bride and groom in a romantic sunset moment",
+    "category": "wedding",
+    "featured": true
+  },
+  {
+    "id": "wed2",
+    "src": "https://images.pexels.com/photos/3014856/pexels-photo-3014856.jpeg",
+    "alt": "The exchange of wedding rings close-up",
+    "category": "wedding"
+  },
+  {
+    "id": "wed3",
+    "src": "https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg",
+    "alt": "Bride walking down the aisle",
+    "category": "wedding",
+    "featured": true
+  },
+  {
+    "id": "wed4",
+    "src": "https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg",
+    "alt": "Wedding party celebration moment",
+    "category": "wedding"
+  },
+  {
+    "id": "port1",
+    "src": "https://images.pexels.com/photos/3765114/pexels-photo-3765114.jpeg",
+    "alt": "Natural light portrait of young woman",
+    "category": "portrait",
+    "featured": true
+  },
+  {
+    "id": "port2",
+    "src": "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg",
+    "alt": "Artistic black and white portrait",
+    "category": "portrait"
+  },
+  {
+    "id": "port3",
+    "src": "https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg",
+    "alt": "Environmental portrait of business professional",
+    "category": "portrait"
+  },
+  {
+    "id": "port4",
+    "src": "https://images.pexels.com/photos/3584924/pexels-photo-3584924.jpeg",
+    "alt": "Close-up emotional portrait",
+    "category": "portrait",
+    "featured": true
+  },
+  {
+    "id": "event1",
+    "src": "https://images.pexels.com/photos/787961/pexels-photo-787961.jpeg",
+    "alt": "Concert crowd with dramatic lighting",
+    "category": "event",
+    "featured": true
+  },
+  {
+    "id": "event2",
+    "src": "https://images.pexels.com/photos/2608517/pexels-photo-2608517.jpeg",
+    "alt": "Corporate event speaker",
+    "category": "event"
+  },
+  {
+    "id": "event3",
+    "src": "https://images.pexels.com/photos/976866/pexels-photo-976866.jpeg",
+    "alt": "Birthday celebration with friends",
+    "category": "event"
+  },
+  {
+    "id": "event4",
+    "src": "https://images.pexels.com/photos/2306281/pexels-photo-2306281.jpeg",
+    "alt": "Award ceremony moment",
+    "category": "event"
+  },
+  {
+    "id": "fam1",
+    "src": "https://images.pexels.com/photos/3933920/pexels-photo-3933920.jpeg",
+    "alt": "Family walking on beach at sunset",
+    "category": "family",
+    "featured": true
+  },
+  {
+    "id": "fam2",
+    "src": "https://images.pexels.com/photos/1683975/pexels-photo-1683975.jpeg",
+    "alt": "Parents playing with child in autumn leaves",
+    "category": "family"
+  },
+  {
+    "id": "fam3",
+    "src": "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg",
+    "alt": "Siblings laughing together",
+    "category": "family"
+  },
+  {
+    "id": "fam4",
+    "src": "https://images.pexels.com/photos/3875080/pexels-photo-3875080.jpeg",
+    "alt": "Multi-generational family portrait",
+    "category": "family",
+    "featured": true
+  }
+]
