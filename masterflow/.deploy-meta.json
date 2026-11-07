@@ -1,7 +1,7 @@
 ﻿{
-    "source_sha":  "8023a9b8f0b91b38297d090f2974682400adf2b4",
-    "deployed_at":  "2026-11-07T10:50:39Z",
-    "cdn_url":  "https://cdn.jsdelivr.net/gh/ecappmakers/ecapps-static@masterflow-v1.69.8/masterflow",
-    "release_tag":  "v1.69.8",
+    "source_sha":  "12c92b6a36ee2ba32dea2c110ec08e8998694ead",
+    "deployed_at":  "2026-11-07T13:54:18Z",
+    "cdn_url":  "https://cdn.jsdelivr.net/gh/ecappmakers/ecapps-static@masterflow-v1.69.11/masterflow",
+    "release_tag":  "v1.69.11",
     "source_repo":  "ecappmakers/masterflow"
 }
