@@ -1,7 +1,7 @@
 ﻿{
-    "source_sha":  "c96a5f160d808b1bf8aac01807b67a980bfb79d6",
-    "deployed_at":  "2026-11-06T13:59:15Z",
-    "cdn_url":  "https://cdn.jsdelivr.net/gh/ecappmakers/ecapps-static@madhu-manish-studio-v1.21.7/madhu-manish-studio",
-    "release_tag":  "v1.21.7",
+    "source_sha":  "01c1c3c39d8ce15cd6881efb81265839c6c315fb",
+    "deployed_at":  "2026-11-07T07:38:42Z",
+    "cdn_url":  "https://cdn.jsdelivr.net/gh/ecappmakers/ecapps-static@madhu-manish-studio-v1.21.8/madhu-manish-studio",
+    "release_tag":  "v1.21.8",
     "source_repo":  "ecappmakers/madhu-manish-studio"
 }
