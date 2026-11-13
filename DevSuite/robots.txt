@@ -1,0 +1,32 @@
+# robots.txt for DevSuite (https://devsuite.ecapps.in)
+
+User-agent: *
+Allow: /
+
+# Explicitly permit AI Crawlers and Search Assistants for AEO & AI Overviews
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# LLM Context Manifests
+# See: https://llmstxt.org
+# llms.txt: https://devsuite.ecapps.in/llms.txt
+# llms-full.txt: https://devsuite.ecapps.in/llms-full.txt
+
+# Sitemaps
+Sitemap: https://devsuite.ecapps.in/sitemap.xml
+

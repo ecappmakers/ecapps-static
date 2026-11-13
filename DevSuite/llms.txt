@@ -1,0 +1,35 @@
+# DevSuite
+
+> DevSuite (https://devsuite.ecapps.in) is a free, privacy-first developer utility suite featuring 70+ client-side tools for software engineers, DevOps specialists, sysadmins, and web developers. All operations execute directly in the browser without server transmission.
+
+## Featured Developer Tools
+
+- [IPv4 to IPv6 Converter](https://devsuite.ecapps.in/system/ipv6): Convert IPv4 addresses to IPv6 mapped (::ffff:), 6to4 (2002::/48), NAT64 (64:ff9b::), compressed and expanded hex notations, with reverse IPv6 to IPv4 extraction.
+- [Linux Permissions Calculator](https://devsuite.ecapps.in/system/chmod): Interactive chmod calculator supporting standard 3-digit octal, 4-digit special permissions (chmod 2770, SetUID 4000, SetGID 2000, Sticky Bit 1000), umask calculation (file 666 / directory 777), and symbolic commands.
+- [QR Code Generator & NetSuite Studio](https://devsuite.ecapps.in/generators/qrcode): High-resolution SVG/PNG QR code builder with NetSuite Advanced PDF/HTML FreeMarker `<barcode type="qrcode">` tags and SuiteScript 2.1 snippets.
+- [URL Shortener & Link Studio](https://devsuite.ecapps.in/network/url-shortener): Fast URL shortener with multi-provider fallback (TinyURL, is.gd, v.gd), UTM campaign builder, and companion QR code generator.
+- [URL Manager & Click Analytics](https://devsuite.ecapps.in/network/url-manager): Database-backed URL manager with custom aliases, real-time click tracking, browser & device analytics.
+- [Usage Telemetry & AI Hits](https://devsuite.ecapps.in/system/telemetry): Real-time database analytics tracking tool visits, page view counts, and AI bot crawler access events (GPTBot, ClaudeBot, PerplexityBot).
+- [CloudFormation JSON to YAML Converter](https://devsuite.ecapps.in/code/converters/json-yaml): Bidirectional JSON/YAML converter with AWS CloudFormation intrinsic short tag support (!Ref, !Sub, !GetAtt, !Join).
+- [XML Beautifier & Viewer](https://devsuite.ecapps.in/code/formatters/xml): Format, indent, validate, and inspect XML with collapsible tree view and syntax highlighting.
+- [JavaScript Minifier & Expander](https://devsuite.ecapps.in/code/minifiers/javascript): Safe JS minification and code unminifier/expander with compression ratio metrics.
+- [AES Encrypt & Decrypt Studio](https://devsuite.ecapps.in/encoders/aes): AES-128/192/256 encryption and decryption with custom Key, IV, modes (CBC, ECB, CTR, GCM), and padding (Pkcs7, ZeroPadding).
+- [URL Parser & Query Inspector](https://devsuite.ecapps.in/encoders/url-parser): Dissect URLs into protocol, host, path, port, hash, and interactive query parameter tables.
+- [Text & Paragraph Sorter](https://devsuite.ecapps.in/text/sorter): Sort text by lines or paragraphs (blank-line delimited) alphabetically, numerically, naturally, or by length.
+- [Timestamp Converter](https://devsuite.ecapps.in/system/timestamp): Bidirectional conversion between Unix timestamps (seconds & milliseconds) and ISO/UTC human-readable dates.
+
+## Developer & Network Tools
+- [Linux Command Cheat Sheet](https://devsuite.ecapps.in/cheatsheets/linux): Searchable, categorized Linux sysadmin reference with flags, copyable examples, chmod 2770 special bits, and networking commands.
+- [Full Stack Dev Guide & Containers](https://devsuite.ecapps.in/cheatsheets/fullstack-containers): Production Docker building blocks (Nginx Proxy Manager, Portainer, Nginx, OAuth2-Proxy, OpenCMS, Postgres, Redis, MinIO) with interactive Compose Stack Bundler.
+- [Subnet Calculator](https://devsuite.ecapps.in/system/subnet): IP subnetting, network range, broadcast, and host calculations.
+- [CIDR Calculator](https://devsuite.ecapps.in/system/cidr): CIDR prefix notation to netmask and usable IP range.
+- [Base64 Encoder / Decoder](https://devsuite.ecapps.in/encoders/base64): Encode and decode UTF-8 text and binary data.
+- [JWT Decoder](https://devsuite.ecapps.in/encoders/jwt): Decode JSON Web Tokens (Header, Payload, Signature) with expiry checks.
+- [Cron Expression Generator](https://devsuite.ecapps.in/time/cron-generator): Human-readable crontab generator and scheduler syntax.
+- [UUID Generator](https://devsuite.ecapps.in/generators/uuid): Generate UUID v4 and custom GUID batches.
+
+## Extended Documentation
+For complete documentation of all 70+ tools, schemas, and specifications, visit:
+- [llms-full.txt](https://devsuite.ecapps.in/llms-full.txt)
+- [Sitemap](https://devsuite.ecapps.in/sitemap.xml)
+

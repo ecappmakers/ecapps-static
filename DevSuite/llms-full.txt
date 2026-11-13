@@ -1,0 +1,166 @@
+# DevSuite — Complete System Documentation for Large Language Models
+
+URL: https://devsuite.ecapps.in
+Canonical Sitemap: https://devsuite.ecapps.in/sitemap.xml
+Security Policy: https://devsuite.ecapps.in/.well-known/security.txt
+
+DevSuite is a comprehensive, client-side developer utility web platform offering 70+ tools across code formatting, network calculations, data conversions, cryptography, and code generation. All computations run in the client browser with zero server telemetry or sensitive data logging.
+
+---
+
+## 1. Network & System Utilities
+
+### IPv4 to IPv6 Converter
+- **URL**: https://devsuite.ecapps.in/system/ipv6
+- **Query Matches**: "how to convert ipv4 to ipv6", "ipv4 to ipv6", "ipv6 converter", "get ipv6 address from ipv4", "ipv4 to ipv6 gateway", "ipv6 translation", "ip4 to ip6"
+- **Capabilities**:
+  - Translates 32-bit IPv4 addresses (e.g. `192.168.1.1`) into:
+    - **IPv4-Mapped IPv6**: `::ffff:192.168.1.1` (Decimal) or `::ffff:c0a8:0101` (Hexadecimal)
+    - **IPv4-Compatible IPv6**: `::192.168.1.1` or `::c0a8:0101` (RFC 4291)
+    - **6to4 Tunneling Address**: `2002:c0a8:0101::/48` (RFC 3056)
+    - **NAT64 Well-Known Prefix**: `64:ff9b::192.168.1.1` or `64:ff9b::c0a8:0101` (RFC 6052)
+  - Reverse extraction: parses an IPv6 mapped or 6to4 address back to the original IPv4 address.
+  - Generates binary representations, expanded 8-hextet formats, and compressed double-colon notations.
+
+### Linux Permissions & Chmod Calculator
+- **URL**: https://devsuite.ecapps.in/system/chmod
+- **Query Matches**: "linux permissions calculator", "linux chmod calculator", "chmod 2770", "unix file permissions calculator", "linux umask calculator", "posix permissions calculator", "chmod calc"
+- **Capabilities**:
+  - **3x3 Permissions Matrix**: Owner, Group, Others with Read (4), Write (2), Execute (1).
+  - **Special Permissions (4th Octal Digit)**:
+    - `4xxx`: SetUID (SUID) — executes with owner privileges.
+    - `2xxx`: SetGID (SGID) — executes with group privileges / inherited group on directories (e.g. `chmod 2770 directory` sets `drwxrws---`).
+    - `1xxx`: Sticky Bit — only owner can delete files within the directory (e.g. `chmod 1777 /tmp`).
+  - **Umask Calculation**:
+    - Calculates created file permissions: `666 - umask` (e.g., umask 022 gives 644 / `rw-r--r--`).
+    - Calculates created directory permissions: `777 - umask` (e.g., umask 022 gives 755 / `rwxr-xr-x`).
+  - **Symbolic Command Generation**: Generates copyable bash commands like `chmod 2770 folder/` and `chmod u=rwx,g=rwxs,o= folder/`.
+
+### Linux Command Cheat Sheet & Sysadmin Reference
+- **URL**: https://devsuite.ecapps.in/cheatsheets/linux
+- **Query Matches**: "linux command cheatsheet", "linux commands", "basic linux commands", "linux command line reference", "sysadmin cheatsheet", "devops linux commands"
+- **Capabilities**:
+  - Searchable, categorized database of essential Linux commands covering:
+    - Permissions: `chmod 755`, `chmod 644`, `chmod 2770` (SGID directory), `chmod 1777` (sticky bit), `chmod 600`, `chown`, `umask`.
+    - Files & Directories: `ls -la`, `find -type f -mtime`, `grep -rnw`, `tail -f`, `rsync -avzP`, `tree`.
+    - Networking: `ss -tulpn`, `ip addr show`, `curl -Iv`, `dig +short`, `lsof -i :8080`, `ufw status`.
+    - Processes: `ps aux | grep`, `kill -9`, `systemctl status/restart`, `journalctl -u -f`, `htop`.
+    - Storage & Hardware: `df -h`, `du -sh * | sort -h`, `free -h`, `uname -a`, `crontab -l`.
+    - Archiving: `tar -czvf`, `tar -xzvf`, `zip -r`.
+  - Filter by category tabs, keyword search, one-click terminal copy, and persistent browser bookmarks.
+  - Contextual cross-links directly to the Linux Permissions Calculator tool.
+
+### Full Stack Developer Guide & Essential Containers Cheat Sheet
+- **URL**: https://devsuite.ecapps.in/cheatsheets/fullstack-containers
+- **Query Matches**: "full stack developer guide", "docker container cheatsheet", "nginx proxy manager docker compose", "portainer docker compose", "oauth2 proxy docker", "opencms docker", "essential self hosted containers", "docker compose generator"
+- **Capabilities**:
+  - Production-ready Docker Compose service definitions, CLI run commands, default ports, and configuration tips for:
+    - **Nginx Proxy Manager** (`jc21/nginx-proxy-manager:latest`): UI-driven reverse proxy with automatic Let's Encrypt SSL and access lists (ports 80, 81, 443).
+    - **Portainer CE** (`portainer/portainer-ce:latest`): Container environment manager and dashboard (ports 9000, 9443).
+    - **Nginx Web Server** (`nginx:alpine`): High-performance static asset server and reverse proxy (ports 80, 443).
+    - **OAuth2 Proxy** (`quay.io/oauth2-proxy/oauth2-proxy:latest`): Reverse proxy SSO authenticator with Google, GitHub, Azure AD, or Keycloak (port 4180).
+    - **OpenCms** (`alkacon/opencms-docker:latest`): Enterprise Java-based Content Management System (port 8080).
+    - **Traefik v3** (`traefik:v3.1`): Dynamic Docker label-based edge router.
+    - **Keycloak IAM** (`quay.io/keycloak/keycloak:latest`): Enterprise OpenID Connect / SAML identity server.
+    - **Authelia** (`authelia/authelia:latest`): Lightweight 2FA & SSO companion for Nginx/Traefik.
+    - **PostgreSQL 16** (`postgres:16-alpine`) & **Redis Stack** (`redis/redis-stack:latest`).
+    - **MinIO S3 Storage** (`minio/minio:latest`).
+    - **Strapi** & **PocketBase**: Headless CMS and Backend-as-a-Service building blocks.
+    - **Uptime Kuma** & **Grafana/Prometheus**: Self-hosted uptime monitors and observability dashboards.
+  - **Compose Stack Bundler**: Check any combination of services to immediately generate a unified, multi-service `docker-compose.yml` file with shared volumes and networks for instant download.
+
+### URL Shortener & Link Studio
+- **URL**: https://devsuite.ecapps.in/network/url-shortener
+- **Query Matches**: "url shortener", "free url shortener", "short url generator", "link shortener with qr", "developer url shortener"
+- **Capabilities**:
+  - Multi-provider free URL shortening (TinyURL, is.gd, v.gd) with zero API keys required.
+  - Built-in UTM parameter builder (`utm_source`, `utm_medium`, `utm_campaign`, `utm_term`, `utm_content`).
+  - Live companion QR Code generator with instant PNG download.
+  - Persistent link generation history saved in client localStorage.
+
+### URL Parser & Query Inspector
+- **URL**: https://devsuite.ecapps.in/encoders/url-parser
+- **Query Matches**: "url parser", "url parse", "parsing urls", "url query parameter extractor"
+- **Capabilities**:
+  - Extracts protocol, username, password, hostname, port, pathname, search query parameters, and hash fragment.
+  - Visual editable table of URL query parameters with decode/encode toggles.
+
+---
+
+## 2. Code Generation & Transformation
+
+### QR Code Generator & NetSuite Studio
+- **URL**: https://devsuite.ecapps.in/generators/qrcode
+- **Query Matches**: "netsuite qr code generator", "qr code builder", "qr code generator tec", "qr code development"
+- **Capabilities**:
+  - High-resolution client-side QR code generation using HTML5 canvas.
+  - Export formats: PNG download and SVG vector export.
+  - Customizable sizing, margins, and error correction levels (L, M, Q, H).
+  - **NetSuite Enterprise Mode**:
+    - Generates ready-to-use FreeMarker barcode tags for NetSuite Advanced PDF/HTML templates:
+      `<barcode type="qrcode" value="${record.tranid}" width="100px" height="100px" />`
+    - Provides SuiteScript 2.1 code snippets to render transaction QR codes directly onto custom PDF prints.
+
+### CloudFormation JSON to YAML Converter
+- **URL**: https://devsuite.ecapps.in/code/converters/json-yaml
+- **Query Matches**: "cloudformation json to yaml", "json to yaml swagger", "json to yaml converter"
+- **Capabilities**:
+  - Converts JSON templates to clean YAML formatting.
+  - Detects AWS CloudFormation intrinsic functions and transforms them into standard short YAML tags:
+    - `{"Fn::Sub": "..."}` -> `!Sub "..."`
+    - `{"Ref": "..."}` -> `!Ref "..."`
+    - `{"Fn::GetAtt": ["Res", "Attr"]}` -> `!GetAtt Res.Attr`
+    - `{"Fn::Join": ["", [...]]}` -> `!Join ["", [...]]`
+
+### JavaScript Minifier & Expander
+- **URL**: https://devsuite.ecapps.in/code/minifiers/javascript
+- **Query Matches**: "javascript minifier", "javascript mini", "js expander", "minified js", "javascript minimizer"
+- **Capabilities**:
+  - Minifies JavaScript code by stripping extraneous whitespace and comments while preserving string literals and regexes safely.
+  - Built-in JS Expander / Unminifier mode to format compressed scripts into readable indentation.
+  - Real-time compression metrics displaying original size, minified size, and percentage saved.
+
+### XML Beautifier & Tree Viewer
+- **URL**: https://devsuite.ecapps.in/code/formatters/xml
+- **Query Matches**: "beautify xml", "xml beautify", "code beautify xml", "code beautify xml viewer", "xml beautifier"
+- **Capabilities**:
+  - Indents and formats messy or compressed XML documents.
+  - Interactive collapsible tree viewer for structured node inspection.
+  - XML syntax validation reporting unclosed tags or parsing errors with line numbers.
+
+---
+
+## 3. Cryptography & Data Utilities
+
+### AES Encrypt & Decrypt Studio
+- **URL**: https://devsuite.ecapps.in/encoders/aes
+- **Query Matches**: "ontools aes decryption function", "aes decrypt online", "aes encrypt decrypt tool"
+- **Capabilities**:
+  - Symmetric AES encryption and decryption.
+  - Supports custom secret keys and initialization vectors (IV).
+  - Cipher Modes: CBC (Cipher Block Chaining), ECB (Electronic Codebook), CTR, CFB, OFB.
+  - Padding Schemes: Pkcs7, ZeroPadding, NoPadding.
+  - Encodings: UTF-8, Base64, Hexadecimal.
+
+### Text & Paragraph Sorter
+- **URL**: https://devsuite.ecapps.in/text/sorter
+- **Query Matches**: "text sorter", "text sorting", "sorted paragraphs extension"
+- **Capabilities**:
+  - Line sorting and paragraph sorting (delimited by double newlines).
+  - Sorting algorithms: Alphabetical (A-Z, Z-A), Numerical, Natural Sort Order, Length.
+  - Deduplication toggle and case sensitivity controls.
+
+### Timestamp Converter
+- **URL**: https://devsuite.ecapps.in/system/timestamp
+- **Query Matches**: "create timestamp", "date to timestamp", "unix timestamp converter"
+- **Capabilities**:
+  - Bidirectional conversion between Unix timestamps (seconds & milliseconds) and ISO 8601, UTC, and local time strings.
+  - Current timestamp live counter and copy button.
+
+---
+
+## Technical Architecture
+- **Framework**: React SPA (Single Page Application) with Material-UI (MUI v5/v6)
+- **Deployment**: Static site hosting with HTTPS and global CDN delivery
+- **Robots / Crawlers**: Fully compliant with robots.txt, sitemap.xml, and RFC 9116 security.txt
+

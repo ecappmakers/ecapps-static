@@ -1,0 +1,11 @@
+# security.txt for DevSuite (RFC 9116)
+# https://devsuite.ecapps.in/.well-known/security.txt
+
+Contact: mailto:security@ecapps.in
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://devsuite.ecapps.in/.well-known/security.txt
+Policy: https://devsuite.ecapps.in/
+Acknowledgments: https://devsuite.ecapps.in/
+Hiring: https://ecapps.in/
+
